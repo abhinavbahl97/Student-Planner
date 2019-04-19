@@ -10,10 +10,21 @@ import UIKit
 
 class CalanderViewController: UIViewController {
 
+    @IBOutlet var Days: [UIButton]!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        var curr = 28
+        
+        for button in Days{
+            button.setTitle("\(curr%30)", for: UIControl.State.normal)
+            curr += 1
+            if (curr == 0){
+                curr += 1
+            }
+        }
     }
     
 
