@@ -17,14 +17,41 @@ class CalanderViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         var curr = 28
+        var april = true
+        var june = false
         
         for button in Days{
-            button.setTitle("\(curr%30)", for: UIControl.State.normal)
-            curr += 1
-            if (curr == 0){
-                curr += 1
+                
+            button.setTitle("\(curr)", for: UIControl.State.normal)
+            button.setTitleColor(UIColor.white, for: .normal)
+            
+            if june{
+                button.setTitleColor(UIColor.darkGray, for: .normal)
             }
+            
+            curr += 1
+            
+            if april == true{
+                button.setTitleColor(UIColor.darkGray, for: .normal)
+                if curr == 31{
+                    april = false
+                    curr = 1
+                }
+            }else{
+                if curr == 32{
+                    curr = 1
+                    june = true
+                }
+            }
+            
+            
+            
+            
+            
+            
+            
         }
+        
     }
     
 
