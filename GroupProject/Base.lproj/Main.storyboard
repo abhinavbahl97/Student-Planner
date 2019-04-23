@@ -125,18 +125,30 @@
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="635-3U-xds">
                                                 <rect key="frame" x="179" y="0.0" width="46" height="30"/>
                                                 <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <segue destination="o0h-6k-9YH" kind="show" id="kRL-oZ-wxy"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qhs-4F-1jr">
                                                 <rect key="frame" x="239" y="0.0" width="45.5" height="30"/>
                                                 <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <segue destination="o0h-6k-9YH" kind="show" id="uIm-gV-qJK"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hmR-ba-GoJ">
                                                 <rect key="frame" x="298.5" y="0.0" width="46" height="30"/>
                                                 <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <segue destination="o0h-6k-9YH" kind="show" id="Esp-i9-LA7"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Znk-ZT-2z0">
                                                 <rect key="frame" x="358.5" y="0.0" width="45.5" height="30"/>
                                                 <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <segue destination="o0h-6k-9YH" kind="show" id="tPw-sO-O4X"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -409,8 +421,38 @@
             </objects>
             <point key="canvasLocation" x="-1972" y="-359"/>
         </scene>
+        <!--Event View Controller-->
+        <scene sceneID="oEQ-WR-x2A">
+            <objects>
+                <viewController storyboardIdentifier="EventViewController" id="o0h-6k-9YH" customClass="EventViewController" customModule="GroupProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="diH-QK-sVY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HgN-7e-P13">
+                                <rect key="frame" x="70" y="192" width="307" height="277"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="WRw-44-Q2b"/>
+                    </view>
+                    <connections>
+                        <outlet property="labelOutlet" destination="HgN-7e-P13" id="h4z-3R-C9j"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Wa-OR-VYy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="37.681159420289859" y="-924.10714285714278"/>
+        </scene>
     </scenes>
     <resources>
         <image name="icons8-calendar-20" width="20" height="20"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Esp-i9-LA7"/>
+    </inferredMetricsTieBreakers>
 </document>

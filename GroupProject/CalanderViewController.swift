@@ -20,9 +20,15 @@ struct Event{
 struct Day{
     
     var date = Date()
-    var events : [Event] = []
-    var button: UIButton
+    var events : [Event]? 
+    var button: UIButton?
     
+}
+
+extension Day{
+    init(date: Date){
+        self.date = date
+    }
 }
 
 
@@ -30,6 +36,20 @@ struct Day{
 class CalanderViewController: UIViewController {
 
     @IBOutlet var calander: [UIButton]!
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        var destVC = segue.destination as! EventViewController
+        
+        var toReturn = Day(date: Date())
+        
+        for day in days{
+            if day.button == sender as? UIButton{
+                toReturn = day
+            }
+        }
+        
+        destVC.day = toReturn
+    }
     
     var days: [Day] = []
     
@@ -43,22 +63,22 @@ class CalanderViewController: UIViewController {
         var june = false
         var dateComponents = DateComponents()
         let userCalendar = Calendar.current // user calendar
-
+        var newDate: Date?
+        var newDay: Day
+        
         dateComponents.year = 2019
 
-        
         for button in calander{
                 
             button.setTitle("\(curr)", for: UIControl.State.normal)
             button.setTitleColor(UIColor.white, for: .normal)
-            
-            if june{
-                button.setTitleColor(UIColor.darkGray, for: .normal)
-            }
-            
             curr += 1
             
-            if april == true{
+            if june{
+            
+                button.setTitleColor(UIColor.darkGray, for: .normal)
+            
+            }else if april == true{
                 button.setTitleColor(UIColor.darkGray, for: .normal)
                 if curr == 31{
                     april = false
@@ -74,20 +94,17 @@ class CalanderViewController: UIViewController {
             if april == false && june == false{
                 
                 dateComponents.month = 5
-                dateComponents.day = curr
+                dateComponents.day = curr - 1
                 dateComponents.timeZone = TimeZone(abbreviation: "EST")
 
-                var someDateTime = userCalendar.date(from: dateComponents)
-                
-                var newDay = Day(date: someDateTime!, events: [], button: button)
+                newDate = userCalendar.date(from: dateComponents)
+                newDay = Day(date: newDate!, events: [], button: button)
                 days.append(newDay)
-   
             }
-            
-            
         }
-        
     }
+    
+    
     
 
     /*
