@@ -8,9 +8,31 @@
 
 import UIKit
 
+struct Event{
+    
+    var name: String
+    var dueDate = Date()
+    var info: String
+    
+    
+}
+
+struct Day{
+    
+    var date = Date()
+    var events : [Event] = []
+    var button: UIButton
+    
+}
+
+
+
 class CalanderViewController: UIViewController {
 
-    @IBOutlet var Days: [UIButton]!
+    @IBOutlet var calander: [UIButton]!
+    
+    var days: [Day] = []
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,8 +41,13 @@ class CalanderViewController: UIViewController {
         var curr = 28
         var april = true
         var june = false
+        var dateComponents = DateComponents()
+        let userCalendar = Calendar.current // user calendar
+
+        dateComponents.year = 2019
+
         
-        for button in Days{
+        for button in calander{
                 
             button.setTitle("\(curr)", for: UIControl.State.normal)
             button.setTitleColor(UIColor.white, for: .normal)
@@ -44,10 +71,18 @@ class CalanderViewController: UIViewController {
                 }
             }
             
-            
-            
-            
-            
+            if april == false && june == false{
+                
+                dateComponents.month = 5
+                dateComponents.day = curr
+                dateComponents.timeZone = TimeZone(abbreviation: "EST")
+
+                var someDateTime = userCalendar.date(from: dateComponents)
+                
+                var newDay = Day(date: someDateTime!, events: [], button: button)
+                days.append(newDay)
+   
+            }
             
             
         }

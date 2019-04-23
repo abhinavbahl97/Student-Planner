@@ -42,7 +42,7 @@
             </objects>
             <point key="canvasLocation" x="-686" y="781"/>
         </scene>
-        <!--Calendar-->
+        <!--Calander-->
         <scene sceneID="aDP-0f-fYR">
             <objects>
                 <viewController storyboardIdentifier="CalanderViewController" id="eZc-Xe-TGD" customClass="CalanderViewController" customModule="GroupProject" customModuleProvider="target" sceneMemberID="viewController">
@@ -340,50 +340,50 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="4bx-qv-OU6"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Calendar" id="j9f-e2-PxN"/>
+                    <tabBarItem key="tabBarItem" title="Calander" image="icons8-calendar-20" selectedImage="icons8-calendar-20" id="j9f-e2-PxN"/>
                     <connections>
-                        <outletCollection property="Days" destination="Hih-22-VCt" collectionClass="NSMutableArray" id="mTY-2o-hRF"/>
-                        <outletCollection property="Days" destination="Qt1-J7-tJR" collectionClass="NSMutableArray" id="WIf-Ou-bHp"/>
-                        <outletCollection property="Days" destination="q3H-Ot-MRc" collectionClass="NSMutableArray" id="u7K-yS-Nfp"/>
-                        <outletCollection property="Days" destination="635-3U-xds" collectionClass="NSMutableArray" id="8KL-ke-ffO"/>
-                        <outletCollection property="Days" destination="Qhs-4F-1jr" collectionClass="NSMutableArray" id="pih-7e-YQr"/>
-                        <outletCollection property="Days" destination="hmR-ba-GoJ" collectionClass="NSMutableArray" id="nue-Ak-A9w"/>
-                        <outletCollection property="Days" destination="Znk-ZT-2z0" collectionClass="NSMutableArray" id="eUh-eq-i45"/>
-                        <outletCollection property="Days" destination="HwZ-Iz-xEF" collectionClass="NSMutableArray" id="2GA-Np-25U"/>
-                        <outletCollection property="Days" destination="YAm-OT-BA9" collectionClass="NSMutableArray" id="B1o-cP-nNg"/>
-                        <outletCollection property="Days" destination="7Ze-um-74c" collectionClass="NSMutableArray" id="1Ht-9X-e2K"/>
-                        <outletCollection property="Days" destination="eWk-f5-esb" collectionClass="NSMutableArray" id="cTx-mf-EHT"/>
-                        <outletCollection property="Days" destination="lRl-i9-FOY" collectionClass="NSMutableArray" id="zhy-ex-WzL"/>
-                        <outletCollection property="Days" destination="iAW-Ry-kN3" collectionClass="NSMutableArray" id="Pbw-YE-YAb"/>
-                        <outletCollection property="Days" destination="LJa-5c-UdV" collectionClass="NSMutableArray" id="ybJ-Hp-n68"/>
-                        <outletCollection property="Days" destination="KEj-by-xWX" collectionClass="NSMutableArray" id="h1D-zI-yLt"/>
-                        <outletCollection property="Days" destination="HF9-ih-Qfh" collectionClass="NSMutableArray" id="i6f-4f-3Ck"/>
-                        <outletCollection property="Days" destination="oT3-kd-ZBS" collectionClass="NSMutableArray" id="p6C-Ro-DFP"/>
-                        <outletCollection property="Days" destination="qeJ-bi-aRG" collectionClass="NSMutableArray" id="NLE-Xa-Lqg"/>
-                        <outletCollection property="Days" destination="8rK-eR-bt0" collectionClass="NSMutableArray" id="Sar-ZX-TaN"/>
-                        <outletCollection property="Days" destination="O04-yP-qRh" collectionClass="NSMutableArray" id="L5v-75-I2R"/>
-                        <outletCollection property="Days" destination="kjS-EJ-SSL" collectionClass="NSMutableArray" id="pFS-Bb-duL"/>
-                        <outletCollection property="Days" destination="cOm-bs-Kaf" collectionClass="NSMutableArray" id="zCg-IU-td9"/>
-                        <outletCollection property="Days" destination="fCO-BM-9Al" collectionClass="NSMutableArray" id="Lf9-Jg-9Xk"/>
-                        <outletCollection property="Days" destination="6b9-Ey-ujh" collectionClass="NSMutableArray" id="Ese-6X-w1u"/>
-                        <outletCollection property="Days" destination="r4f-Ch-paT" collectionClass="NSMutableArray" id="RfE-VJ-lYG"/>
-                        <outletCollection property="Days" destination="zWb-2U-iPK" collectionClass="NSMutableArray" id="8PG-kg-Sxa"/>
-                        <outletCollection property="Days" destination="lmr-d8-WlY" collectionClass="NSMutableArray" id="foR-ft-Sy4"/>
-                        <outletCollection property="Days" destination="oYz-po-hq3" collectionClass="NSMutableArray" id="onL-A4-e6q"/>
-                        <outletCollection property="Days" destination="g52-aM-Xqn" collectionClass="NSMutableArray" id="sBL-gE-Gii"/>
-                        <outletCollection property="Days" destination="3Cc-tQ-CFc" collectionClass="NSMutableArray" id="0qy-wI-Pfp"/>
-                        <outletCollection property="Days" destination="QUc-Mf-gDi" collectionClass="NSMutableArray" id="BME-ah-FfL"/>
-                        <outletCollection property="Days" destination="JCw-iI-ymn" collectionClass="NSMutableArray" id="alR-la-6lK"/>
-                        <outletCollection property="Days" destination="q56-Kq-zu4" collectionClass="NSMutableArray" id="Nca-9L-Yjf"/>
-                        <outletCollection property="Days" destination="1wT-re-hXS" collectionClass="NSMutableArray" id="NnL-jM-7av"/>
-                        <outletCollection property="Days" destination="wrC-wL-GIK" collectionClass="NSMutableArray" id="fBY-lF-uZi"/>
-                        <outletCollection property="Days" destination="J0I-kP-YbQ" collectionClass="NSMutableArray" id="lAp-eJ-vqj"/>
-                        <outletCollection property="Days" destination="7CQ-TS-Ajf" collectionClass="NSMutableArray" id="UBG-bH-Wr9"/>
-                        <outletCollection property="Days" destination="306-hr-9G5" collectionClass="NSMutableArray" id="uTy-do-6Cb"/>
-                        <outletCollection property="Days" destination="6mv-N7-73c" collectionClass="NSMutableArray" id="A9h-M3-0Hq"/>
-                        <outletCollection property="Days" destination="yNa-av-Lc3" collectionClass="NSMutableArray" id="OdF-hD-RI6"/>
-                        <outletCollection property="Days" destination="NYW-uP-axi" collectionClass="NSMutableArray" id="774-hC-A6l"/>
-                        <outletCollection property="Days" destination="WFA-Kj-E0F" collectionClass="NSMutableArray" id="CfI-wH-ChT"/>
+                        <outletCollection property="calander" destination="Hih-22-VCt" collectionClass="NSMutableArray" id="mTY-2o-hRF"/>
+                        <outletCollection property="calander" destination="Qt1-J7-tJR" collectionClass="NSMutableArray" id="WIf-Ou-bHp"/>
+                        <outletCollection property="calander" destination="q3H-Ot-MRc" collectionClass="NSMutableArray" id="u7K-yS-Nfp"/>
+                        <outletCollection property="calander" destination="635-3U-xds" collectionClass="NSMutableArray" id="8KL-ke-ffO"/>
+                        <outletCollection property="calander" destination="Qhs-4F-1jr" collectionClass="NSMutableArray" id="pih-7e-YQr"/>
+                        <outletCollection property="calander" destination="hmR-ba-GoJ" collectionClass="NSMutableArray" id="nue-Ak-A9w"/>
+                        <outletCollection property="calander" destination="Znk-ZT-2z0" collectionClass="NSMutableArray" id="eUh-eq-i45"/>
+                        <outletCollection property="calander" destination="HwZ-Iz-xEF" collectionClass="NSMutableArray" id="2GA-Np-25U"/>
+                        <outletCollection property="calander" destination="YAm-OT-BA9" collectionClass="NSMutableArray" id="B1o-cP-nNg"/>
+                        <outletCollection property="calander" destination="7Ze-um-74c" collectionClass="NSMutableArray" id="1Ht-9X-e2K"/>
+                        <outletCollection property="calander" destination="eWk-f5-esb" collectionClass="NSMutableArray" id="cTx-mf-EHT"/>
+                        <outletCollection property="calander" destination="lRl-i9-FOY" collectionClass="NSMutableArray" id="zhy-ex-WzL"/>
+                        <outletCollection property="calander" destination="iAW-Ry-kN3" collectionClass="NSMutableArray" id="Pbw-YE-YAb"/>
+                        <outletCollection property="calander" destination="LJa-5c-UdV" collectionClass="NSMutableArray" id="ybJ-Hp-n68"/>
+                        <outletCollection property="calander" destination="KEj-by-xWX" collectionClass="NSMutableArray" id="h1D-zI-yLt"/>
+                        <outletCollection property="calander" destination="HF9-ih-Qfh" collectionClass="NSMutableArray" id="i6f-4f-3Ck"/>
+                        <outletCollection property="calander" destination="oT3-kd-ZBS" collectionClass="NSMutableArray" id="p6C-Ro-DFP"/>
+                        <outletCollection property="calander" destination="qeJ-bi-aRG" collectionClass="NSMutableArray" id="NLE-Xa-Lqg"/>
+                        <outletCollection property="calander" destination="8rK-eR-bt0" collectionClass="NSMutableArray" id="Sar-ZX-TaN"/>
+                        <outletCollection property="calander" destination="O04-yP-qRh" collectionClass="NSMutableArray" id="L5v-75-I2R"/>
+                        <outletCollection property="calander" destination="kjS-EJ-SSL" collectionClass="NSMutableArray" id="pFS-Bb-duL"/>
+                        <outletCollection property="calander" destination="cOm-bs-Kaf" collectionClass="NSMutableArray" id="zCg-IU-td9"/>
+                        <outletCollection property="calander" destination="fCO-BM-9Al" collectionClass="NSMutableArray" id="Lf9-Jg-9Xk"/>
+                        <outletCollection property="calander" destination="6b9-Ey-ujh" collectionClass="NSMutableArray" id="Ese-6X-w1u"/>
+                        <outletCollection property="calander" destination="r4f-Ch-paT" collectionClass="NSMutableArray" id="RfE-VJ-lYG"/>
+                        <outletCollection property="calander" destination="zWb-2U-iPK" collectionClass="NSMutableArray" id="8PG-kg-Sxa"/>
+                        <outletCollection property="calander" destination="lmr-d8-WlY" collectionClass="NSMutableArray" id="foR-ft-Sy4"/>
+                        <outletCollection property="calander" destination="oYz-po-hq3" collectionClass="NSMutableArray" id="onL-A4-e6q"/>
+                        <outletCollection property="calander" destination="g52-aM-Xqn" collectionClass="NSMutableArray" id="sBL-gE-Gii"/>
+                        <outletCollection property="calander" destination="3Cc-tQ-CFc" collectionClass="NSMutableArray" id="0qy-wI-Pfp"/>
+                        <outletCollection property="calander" destination="QUc-Mf-gDi" collectionClass="NSMutableArray" id="BME-ah-FfL"/>
+                        <outletCollection property="calander" destination="JCw-iI-ymn" collectionClass="NSMutableArray" id="alR-la-6lK"/>
+                        <outletCollection property="calander" destination="q56-Kq-zu4" collectionClass="NSMutableArray" id="Nca-9L-Yjf"/>
+                        <outletCollection property="calander" destination="1wT-re-hXS" collectionClass="NSMutableArray" id="NnL-jM-7av"/>
+                        <outletCollection property="calander" destination="wrC-wL-GIK" collectionClass="NSMutableArray" id="fBY-lF-uZi"/>
+                        <outletCollection property="calander" destination="J0I-kP-YbQ" collectionClass="NSMutableArray" id="lAp-eJ-vqj"/>
+                        <outletCollection property="calander" destination="7CQ-TS-Ajf" collectionClass="NSMutableArray" id="UBG-bH-Wr9"/>
+                        <outletCollection property="calander" destination="306-hr-9G5" collectionClass="NSMutableArray" id="uTy-do-6Cb"/>
+                        <outletCollection property="calander" destination="6mv-N7-73c" collectionClass="NSMutableArray" id="A9h-M3-0Hq"/>
+                        <outletCollection property="calander" destination="yNa-av-Lc3" collectionClass="NSMutableArray" id="OdF-hD-RI6"/>
+                        <outletCollection property="calander" destination="NYW-uP-axi" collectionClass="NSMutableArray" id="774-hC-A6l"/>
+                        <outletCollection property="calander" destination="WFA-Kj-E0F" collectionClass="NSMutableArray" id="CfI-wH-ChT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IeB-57-WLw" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -400,8 +400,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="rs4-3G-7C7" kind="relationship" relationship="viewControllers" id="VFg-Wj-iIg"/>
                         <segue destination="eZc-Xe-TGD" kind="relationship" relationship="viewControllers" id="Qg2-S5-8OJ"/>
+                        <segue destination="rs4-3G-7C7" kind="relationship" relationship="viewControllers" id="VFg-Wj-iIg"/>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="Vsr-uB-PqX"/>
                     </connections>
                 </tabBarController>
@@ -410,4 +410,7 @@
             <point key="canvasLocation" x="-1972" y="-359"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icons8-calendar-20" width="20" height="20"/>
+    </resources>
 </document>
