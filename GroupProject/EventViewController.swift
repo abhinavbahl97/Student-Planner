@@ -13,6 +13,8 @@ class EventViewController: UIViewController {
     
     
     var day = Day(date: Date())
+    var events : [Event] = []
+    
 
     
     @IBOutlet weak var labelOutlet: UILabel!
@@ -24,8 +26,11 @@ class EventViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         let df = DateFormatter()
-        df.dateFormat = "dd yyyy"
-        labelOutlet.text = "May \(df.string(from: day.date))" 
+        
+        df.dateFormat = "d, yyyy"
+        labelOutlet.text = "May \(df.string(from: day.date))"
+        events = day.events!
+        
         
     }
     
