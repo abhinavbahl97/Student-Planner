@@ -20,7 +20,7 @@ struct Event{
 struct Day{
     
     var date = Date()
-    var events : [Event]? 
+    var events : [Event] = []
     var button: UIButton?
     
 }
@@ -67,6 +67,8 @@ class CalanderViewController: UIViewController {
         var newDay: Day
         
         dateComponents.year = 2019
+        
+        //the following sets up the numbers for the calander and assigns dates to May dates adding them to "days" collection
 
         for button in calander{
                 
@@ -90,7 +92,6 @@ class CalanderViewController: UIViewController {
                     june = true
                 }
             }
-            
             if april == false && june == false{
                 
                 dateComponents.month = 5
@@ -104,6 +105,55 @@ class CalanderViewController: UIViewController {
         }
     }
     
+
+
+    
+    @IBAction func addEvent(_ sender: UIButton) {
+        
+        let datePicker =  UIDatePicker()
+        let alert = UIAlertController(title: "Enter New Home Work Assignment", message: "Don't procrastinate!", preferredStyle: .alert)
+        
+        
+        datePicker.datePickerMode = .date
+        datePicker.addTarget(self, action: #selector(self.dateChanged(datePicker:)), for: .valueChanged)
+        
+        alert.addTextField { (textField) in
+            textField.placeholder = "Enter name.."
+            textField.borderStyle = .roundedRect
+        }
+        alert.addTextField { (textField) in
+            textField.placeholder = "Enter class name.."
+            textField.borderStyle = .roundedRect
+        }
+        alert.addTextField { (textField) in
+            textField.placeholder = "Select due date.."
+            textField.inputView = datePicker
+            textField.borderStyle = .roundedRect
+            
+            
+        }
+        alert.addAction(UIAlertAction(title: "Add", style: .default, handler: { [weak alert] (_) in
+            
+            //if anything isnt filled in a mistake will happen
+            let assignmentName = alert?.textFields![0]
+            let className = alert?.textFields![1]
+            for day in self.days{
+                if day.date == datePicker.date{
+                    let newEvent = Event(name: (assignmentName?.text!)!, dueDate: datePicker.date, info: (className?.text!)!)
+                    var toChange = day.events
+                    toChange.append(newEvent) //is this really updating it??
+                }
+            }
+        }))
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    @objc func dateChanged(datePicker: UIDatePicker){
+        
+        
+        
+    }
     
     
 

@@ -29,7 +29,7 @@ class EventViewController: UIViewController {
         
         df.dateFormat = "d, yyyy"
         labelOutlet.text = "May \(df.string(from: day.date))"
-        events = day.events!
+        events = day.events
         
         
     }
