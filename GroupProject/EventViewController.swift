@@ -8,9 +8,8 @@
 
 import UIKit
 
-class EventViewController: UIViewController {
-    
-    
+class EventViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+
     
     var day = Day(date: Date())
     var events : [Event] = []
@@ -20,16 +19,66 @@ class EventViewController: UIViewController {
     @IBOutlet weak var labelOutlet: UILabel!
     
     
+    @IBOutlet weak var tableViewOutlet: UITableView!{
+        didSet{
+            tableViewOutlet.delegate = self
+            tableViewOutlet.dataSource = self
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         let df = DateFormatter()
-        
         df.dateFormat = "d, yyyy"
         labelOutlet.text = "May \(df.string(from: day.date))"
-        events = day.events
+        //events = day.events
+        update()
+        
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        return events.count
+        
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableViewOutlet.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        
+        let datef = DateFormatter()
+        datef.dateFormat = "MM/DD/YYYY"
+        
+        
+        print(events[indexPath.row])
+
+        
+        
+        
+        if let myCell = cell as? Cell{
+            myCell.className.text = events[indexPath.row].info
+            myCell.dueDate.text = datef.string(from: events[indexPath.row].dueDate)
+            myCell.name.text = events[indexPath.row].name
+        }
+        return cell
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 3
+    }
+    
+    func update(){
+        
+        let data = Date()
+        let toPush = Event(name: "Trial", dueDate: data, info: "This is a trial")
+        
+        events = [toPush]
+        
+
+        
+        
         
         
     }
@@ -45,4 +94,12 @@ class EventViewController: UIViewController {
     }
     */
 
+}
+
+class Cell: UITableViewCell{
+    
+    @IBOutlet weak var className: UILabel!
+    @IBOutlet weak var dueDate: UILabel!
+    @IBOutlet weak var name: UILabel!
+    
 }
