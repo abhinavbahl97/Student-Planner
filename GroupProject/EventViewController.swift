@@ -56,9 +56,13 @@ class EventViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         
         if let myCell = cell as? Cell{
+            
             myCell.className.text = events[indexPath.row].info
             myCell.dueDate.text = datef.string(from: events[indexPath.row].dueDate)
             myCell.name.text = events[indexPath.row].name
+            myCell.textLabel?.numberOfLines = 0
+            myCell.textLabel?.lineBreakMode = .byWordWrapping
+    
         }
         return cell
     }
