@@ -40,7 +40,7 @@ class EventViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return events.count
+        return 1
         
     }
     
@@ -53,8 +53,6 @@ class EventViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         
         print(events[indexPath.row])
-
-        
         
         
         if let myCell = cell as? Cell{
@@ -66,7 +64,7 @@ class EventViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 3
+        return 1
     }
     
     func update(){
@@ -75,12 +73,6 @@ class EventViewController: UIViewController, UITableViewDelegate, UITableViewDat
         let toPush = Event(name: "Trial", dueDate: data, info: "This is a trial")
         
         events = [toPush]
-        
-
-        
-        
-        
-        
     }
     
 

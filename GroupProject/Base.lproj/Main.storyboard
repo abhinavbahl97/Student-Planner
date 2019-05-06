@@ -460,9 +460,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HgN-7e-P13">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HgN-7e-P13">
                                 <rect key="frame" x="54" y="57" width="307" height="74"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -526,7 +525,10 @@
                         <constraints>
                             <constraint firstItem="WRw-44-Q2b" firstAttribute="bottom" secondItem="GjQ-sJ-U8u" secondAttribute="bottom" id="8Zy-z5-QpQ"/>
                             <constraint firstItem="WRw-44-Q2b" firstAttribute="trailing" secondItem="GjQ-sJ-U8u" secondAttribute="trailing" id="NCY-G3-u2F"/>
+                            <constraint firstItem="GjQ-sJ-U8u" firstAttribute="top" secondItem="HgN-7e-P13" secondAttribute="bottom" id="Ofp-up-ZDw"/>
+                            <constraint firstItem="GjQ-sJ-U8u" firstAttribute="top" secondItem="HgN-7e-P13" secondAttribute="bottom" id="VOR-vE-N5W"/>
                             <constraint firstItem="GjQ-sJ-U8u" firstAttribute="leading" secondItem="WRw-44-Q2b" secondAttribute="leading" id="kMg-oa-v0T"/>
+                            <constraint firstItem="GjQ-sJ-U8u" firstAttribute="top" secondItem="HgN-7e-P13" secondAttribute="bottom" id="rjJ-fw-5aK"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="WRw-44-Q2b"/>
                     </view>
