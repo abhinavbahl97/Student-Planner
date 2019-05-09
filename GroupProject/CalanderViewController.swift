@@ -9,7 +9,6 @@
 import UIKit
 
 struct Event{
-    
     var name: String
     var dueDate = Date()
     var info: String
@@ -33,14 +32,12 @@ extension Day{
     }
 }
 
-
-
 class CalanderViewController: UIViewController {
 
     @IBOutlet var calander: [UIButton]!
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        var destVC = segue.destination as! EventViewController
+        let destVC = segue.destination as! EventViewController
         
         var toReturn = Day(date: Date())
         
@@ -100,9 +97,6 @@ class CalanderViewController: UIViewController {
         }
     }
     
-
-
-    
     @IBAction func addEvent(_ sender: UIButton) {
         
         let calander = Calendar(identifier: .gregorian)
@@ -134,12 +128,11 @@ class CalanderViewController: UIViewController {
             
             var x = 0
             
-            for var day in self.days{
+            for day in self.days{
                 if calander.isDate(day.date, equalTo: datePicker.date, toGranularity: .day) {
                     let newEvent = Event(name: (assignmentName?.text!)!, dueDate: datePicker.date, info: (className?.text!)!)
                     
                     self.days[x].addEvent(newEvent: newEvent)
-                    day.addEvent(newEvent: newEvent)
                 }
                 x += 1
             }
@@ -148,19 +141,5 @@ class CalanderViewController: UIViewController {
         alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
         self.present(alert, animated: true, completion: nil)
     }
-    
-    
-    
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
