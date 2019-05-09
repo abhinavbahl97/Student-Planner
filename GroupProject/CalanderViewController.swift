@@ -13,8 +13,6 @@ struct Event{
     var name: String
     var dueDate = Date()
     var info: String
-    
-    
 }
 
 struct Day{
@@ -22,6 +20,10 @@ struct Day{
     var date = Date()
     var events : [Event] = []
     var button: UIButton?
+    
+    mutating func addEvent(newEvent: Event){
+        events.append(newEvent)
+    }
     
 }
 
@@ -52,10 +54,6 @@ class CalanderViewController: UIViewController {
     }
     
     var days: [Day] = []
-    
-    var data = UITextField()
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -97,6 +95,7 @@ class CalanderViewController: UIViewController {
                 newDate = userCalendar.date(from: dateComponents)
                 newDay = Day(date: newDate!, events: [], button: button)
                 days.append(newDay)
+                
             }
         }
     }
@@ -105,6 +104,8 @@ class CalanderViewController: UIViewController {
 
     
     @IBAction func addEvent(_ sender: UIButton) {
+        
+        let calander = Calendar(identifier: .gregorian)
         
         let datePicker =  UIDatePicker()
         let alert = UIAlertController(title: "Enter New Home Work Assignment", message: "Don't procrastinate!", preferredStyle: .alert)
@@ -125,19 +126,25 @@ class CalanderViewController: UIViewController {
             data.borderStyle = .roundedRect
         }
         alert.addAction(UIAlertAction(title: "Add", style: .default, handler: { [weak alert] (_) in
+            
+            print(datePicker.date)
             //if anything isnt filled in a mistake will happen
             let assignmentName = alert?.textFields![0]
             let className = alert?.textFields![1]
             
-            for day in self.days{
-                if day.date == datePicker.date{
-                    let newEvent = Event(name: (assignmentName?.text!)!, dueDate: datePicker.date, info: (className?.text!)!)
-                    var toChange = day.events
-                    toChange.append(newEvent) //is this really updating it??
-                }
-            }
+            var x = 0
             
+            for var day in self.days{
+                if calander.isDate(day.date, equalTo: datePicker.date, toGranularity: .day) {
+                    let newEvent = Event(name: (assignmentName?.text!)!, dueDate: datePicker.date, info: (className?.text!)!)
+                    
+                    self.days[x].addEvent(newEvent: newEvent)
+                    day.addEvent(newEvent: newEvent)
+                }
+                x += 1
+            }
         }))
+        
         alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
         self.present(alert, animated: true, completion: nil)
     }

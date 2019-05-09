@@ -12,56 +12,49 @@ class EventViewController: UIViewController, UITableViewDelegate, UITableViewDat
 
     
     var day = Day(date: Date())
-    var events : [Event] = []
-    
-
+    var events : [Event]?
     
     @IBOutlet weak var labelOutlet: UILabel!
-    
-    
     @IBOutlet weak var tableViewOutlet: UITableView!{
         didSet{
             tableViewOutlet.delegate = self
             tableViewOutlet.dataSource = self
+            tableViewOutlet.backgroundColor = #colorLiteral(red: 1, green: 0.7520371675, blue: 0.2334620059, alpha: 1)
         }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
         let df = DateFormatter()
         df.dateFormat = "d, yyyy"
         labelOutlet.text = "May \(df.string(from: day.date))"
-        //events = day.events
-        update()
+        events = day.events
+        //update()
         
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return 1
+        return events!.count
         
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableViewOutlet.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        
         let datef = DateFormatter()
         datef.dateFormat = "MM/DD/YYYY"
         
-        
-        print(events[indexPath.row])
-        
-        
         if let myCell = cell as? Cell{
+        
+            myCell.className.text = events![indexPath.row].info
+            myCell.name.text = events![indexPath.row].name
             
-            myCell.className.text = events[indexPath.row].info
-            myCell.dueDate.text = datef.string(from: events[indexPath.row].dueDate)
-            myCell.name.text = events[indexPath.row].name
-            myCell.textLabel?.numberOfLines = 0
-            myCell.textLabel?.lineBreakMode = .byWordWrapping
+            myCell.backgroundColor = #colorLiteral(red: 0.1411764771, green: 0.3960784376, blue: 0.5647059083, alpha: 1)
+            
+//            myCell.textLabel?.numberOfLines = 0
+//            myCell.textLabel?.lineBreakMode = .byWordWrapping
     
         }
         return cell
@@ -74,9 +67,11 @@ class EventViewController: UIViewController, UITableViewDelegate, UITableViewDat
     func update(){
         
         let data = Date()
-        let toPush = Event(name: "Trial", dueDate: data, info: "This is a trial")
         
+        let toPush = Event(name: "Final Demo", dueDate: data, info: "CMSC436")
         events = [toPush]
+        let h = Event(name: "Review", dueDate: data, info: "CMSC434")
+        //events.append(h)
     }
     
 
@@ -95,7 +90,6 @@ class EventViewController: UIViewController, UITableViewDelegate, UITableViewDat
 class Cell: UITableViewCell{
     
     @IBOutlet weak var className: UILabel!
-    @IBOutlet weak var dueDate: UILabel!
     @IBOutlet weak var name: UILabel!
     
 }
