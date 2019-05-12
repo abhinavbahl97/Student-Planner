@@ -18,7 +18,7 @@
 		209A55092268E6B3009A5BF5 /* CalanderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209A55082268E6B3009A5BF5 /* CalanderViewController.swift */; };
 		690182E52288D2400009E3D9 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690182E42288D2400009E3D9 /* CustomView.swift */; };
 		690182E72288D25D0009E3D9 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690182E62288D25D0009E3D9 /* CustomButton.swift */; };
-		69082A6122820A1B00123078 /* FitnessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69082A6022820A1B00123078 /* FitnessViewController.swift */; };
+		69082A6122820A1B00123078 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69082A6022820A1B00123078 /* TimerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +56,7 @@
 		209A55082268E6B3009A5BF5 /* CalanderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalanderViewController.swift; sourceTree = "<group>"; };
 		690182E42288D2400009E3D9 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		690182E62288D25D0009E3D9 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
-		69082A6022820A1B00123078 /* FitnessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnessViewController.swift; sourceTree = "<group>"; };
+		69082A6022820A1B00123078 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +111,7 @@
 				209A55082268E6B3009A5BF5 /* CalanderViewController.swift */,
 				209A54DC2268D941009A5BF5 /* ViewController.swift */,
 				209A54DE2268D941009A5BF5 /* Main.storyboard */,
-				69082A6022820A1B00123078 /* FitnessViewController.swift */,
+				69082A6022820A1B00123078 /* TimerViewController.swift */,
 				690182E42288D2400009E3D9 /* CustomView.swift */,
 				690182E62288D25D0009E3D9 /* CustomButton.swift */,
 				200EEC31226F87C800E89A89 /* EventViewController.swift */,
@@ -272,7 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				209A55092268E6B3009A5BF5 /* CalanderViewController.swift in Sources */,
-				69082A6122820A1B00123078 /* FitnessViewController.swift in Sources */,
+				69082A6122820A1B00123078 /* TimerViewController.swift in Sources */,
 				200EEC32226F87C800E89A89 /* EventViewController.swift in Sources */,
 				690182E52288D2400009E3D9 /* CustomView.swift in Sources */,
 				209A54DD2268D941009A5BF5 /* ViewController.swift in Sources */,
