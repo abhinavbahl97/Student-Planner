@@ -23,7 +23,6 @@ struct Day{
     mutating func addEvent(newEvent: Event){
         events.append(newEvent)
     }
-    
 }
 
 extension Day{
@@ -75,11 +74,7 @@ class CalanderViewController: UIViewController {
             self.viewDidLoad()
         }
     }
-    
-    
-    
-    
-    
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destVC = segue.destination as! EventViewController
         
@@ -181,8 +176,11 @@ class CalanderViewController: UIViewController {
             for day in self.days{
                 if calander.isDate(day.date, equalTo: datePicker.date, toGranularity: .day) {
                     let newEvent = Event(name: (assignmentName?.text!)!, dueDate: datePicker.date, info: (className?.text!)!)
-                    
                     self.days[x].addEvent(newEvent: newEvent)
+                    self.days[x].button?.backgroundColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
+                    self.days[x].button?.layer.cornerRadius = 5
+                    
+                    
                 }
                 x += 1
             }

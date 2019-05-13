@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		200EEC32226F87C800E89A89 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200EEC31226F87C800E89A89 /* EventViewController.swift */; };
+		204A51FB228A19E50068049C /* SleepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204A51FA228A19E50068049C /* SleepViewController.swift */; };
 		209A54DB2268D941009A5BF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209A54DA2268D941009A5BF5 /* AppDelegate.swift */; };
 		209A54DD2268D941009A5BF5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209A54DC2268D941009A5BF5 /* ViewController.swift */; };
 		209A54E02268D941009A5BF5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 209A54DE2268D941009A5BF5 /* Main.storyboard */; };
@@ -42,6 +43,7 @@
 
 /* Begin PBXFileReference section */
 		200EEC31226F87C800E89A89 /* EventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
+		204A51FA228A19E50068049C /* SleepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepViewController.swift; sourceTree = "<group>"; };
 		209A54D72268D941009A5BF5 /* GroupProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GroupProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		209A54DA2268D941009A5BF5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		209A54DC2268D941009A5BF5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 				209A54DA2268D941009A5BF5 /* AppDelegate.swift */,
 				209A55082268E6B3009A5BF5 /* CalanderViewController.swift */,
 				209A54DC2268D941009A5BF5 /* ViewController.swift */,
+				204A51FA228A19E50068049C /* SleepViewController.swift */,
 				209A54DE2268D941009A5BF5 /* Main.storyboard */,
 				69082A6022820A1B00123078 /* TimerViewController.swift */,
 				6945C10A2289F9D30046EB73 /* HealthKitManager.swift */,
@@ -298,6 +301,7 @@
 				6945C10B2289F9D30046EB73 /* HealthKitManager.swift in Sources */,
 				200EEC32226F87C800E89A89 /* EventViewController.swift in Sources */,
 				690182E52288D2400009E3D9 /* CustomView.swift in Sources */,
+				204A51FB228A19E50068049C /* SleepViewController.swift in Sources */,
 				209A54DD2268D941009A5BF5 /* ViewController.swift in Sources */,
 				209A54DB2268D941009A5BF5 /* AppDelegate.swift in Sources */,
 				690182E72288D25D0009E3D9 /* CustomButton.swift in Sources */,
