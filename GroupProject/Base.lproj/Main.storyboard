@@ -26,126 +26,6 @@
             </objects>
             <point key="canvasLocation" x="-468" y="-220"/>
         </scene>
-        <!--Item-->
-        <scene sceneID="Bye-uh-15U">
-            <objects>
-                <viewController id="sG2-Uc-3N6" customClass="TimerViewController" customModule="GroupProject" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="2Rs-dW-Jdr"/>
-                        <viewControllerLayoutGuide type="bottom" id="x8Y-QH-q56"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Fns-8h-KE9">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kfm-Ls-8Kp" customClass="CustomView" customModule="GroupProject" customModuleProvider="target">
-                                <rect key="frame" x="75.5" y="103" width="263" height="85"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VTg-Tx-Si7">
-                                        <rect key="frame" x="18" y="8" width="226" height="69"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="53"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="85" id="5JM-h6-Yu7"/>
-                                    <constraint firstAttribute="width" constant="263" id="5Wn-mb-2fS"/>
-                                    <constraint firstItem="VTg-Tx-Si7" firstAttribute="leading" secondItem="Kfm-Ls-8Kp" secondAttribute="leading" constant="18" id="Cwm-Gm-BnM"/>
-                                    <constraint firstItem="VTg-Tx-Si7" firstAttribute="top" secondItem="Kfm-Ls-8Kp" secondAttribute="top" constant="8" id="OaA-zv-iaa"/>
-                                    <constraint firstAttribute="trailing" secondItem="VTg-Tx-Si7" secondAttribute="trailing" constant="19" id="Tfy-jw-h0h"/>
-                                    <constraint firstAttribute="bottom" secondItem="VTg-Tx-Si7" secondAttribute="bottom" constant="8" id="YKA-Cm-UaS"/>
-                                </constraints>
-                            </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00 Miles" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RwW-b8-Acb">
-                                <rect key="frame" x="75.5" y="196" width="263" height="49"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="263" id="byf-Gm-Pv1"/>
-                                    <constraint firstAttribute="height" constant="49" id="rJv-Gd-HgH"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="27"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5tk-Ed-47y" customClass="CustomButton" customModule="GroupProject" customModuleProvider="target">
-                                <rect key="frame" x="150.5" y="253" width="113" height="48"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="113" id="Nne-D3-puP"/>
-                                    <constraint firstAttribute="height" constant="48" id="XGY-A7-Ult"/>
-                                </constraints>
-                                <state key="normal" title="Go">
-                                    <color key="titleColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="startTimerWithSender:" destination="sG2-Uc-3N6" eventType="touchUpInside" id="Xxx-hx-Rlc"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W0Y-Jm-ugE" customClass="CustomButton" customModule="GroupProject" customModuleProvider="target">
-                                <rect key="frame" x="150.5" y="309" width="113" height="48"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="113" id="3uf-k7-2Ln"/>
-                                    <constraint firstAttribute="height" constant="48" id="M6a-kN-BMT"/>
-                                </constraints>
-                                <state key="normal" title="Stop">
-                                    <color key="titleColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="stopTimerWithSender:" destination="sG2-Uc-3N6" eventType="touchUpInside" id="00M-Hk-s1r"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iCV-1o-PdF" customClass="CustomButton" customModule="GroupProject" customModuleProvider="target">
-                                <rect key="frame" x="150.5" y="365" width="113" height="48"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="113" id="DUp-R4-UcE"/>
-                                    <constraint firstAttribute="height" constant="48" id="Z9b-AN-xXy"/>
-                                </constraints>
-                                <state key="normal" title="Share">
-                                    <color key="titleColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="shareWithSender:" destination="sG2-Uc-3N6" eventType="touchUpInside" id="9zp-lU-dJ0"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Height:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PfB-NE-9Tp">
-                                <rect key="frame" x="20" y="421" width="374" height="31"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="31" id="rKb-qJ-peu"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="19"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="5tk-Ed-47y" firstAttribute="top" secondItem="RwW-b8-Acb" secondAttribute="bottom" constant="8" id="3VC-Bc-74q"/>
-                            <constraint firstItem="PfB-NE-9Tp" firstAttribute="trailing" secondItem="Fns-8h-KE9" secondAttribute="trailingMargin" id="8Me-Ci-sc8"/>
-                            <constraint firstItem="Kfm-Ls-8Kp" firstAttribute="top" secondItem="2Rs-dW-Jdr" secondAttribute="bottom" constant="59" id="ABH-ve-20y"/>
-                            <constraint firstItem="W0Y-Jm-ugE" firstAttribute="top" secondItem="5tk-Ed-47y" secondAttribute="bottom" constant="8" id="DIW-wz-QsM"/>
-                            <constraint firstItem="PfB-NE-9Tp" firstAttribute="top" secondItem="iCV-1o-PdF" secondAttribute="bottom" constant="8" id="DzN-XK-Xqh"/>
-                            <constraint firstItem="RwW-b8-Acb" firstAttribute="top" secondItem="Kfm-Ls-8Kp" secondAttribute="bottom" constant="8" id="HYM-Gf-01r"/>
-                            <constraint firstItem="5tk-Ed-47y" firstAttribute="centerX" secondItem="Fns-8h-KE9" secondAttribute="centerX" id="UFV-qO-b8P"/>
-                            <constraint firstItem="iCV-1o-PdF" firstAttribute="top" secondItem="W0Y-Jm-ugE" secondAttribute="bottom" constant="8" id="WjQ-17-1PQ"/>
-                            <constraint firstItem="W0Y-Jm-ugE" firstAttribute="centerX" secondItem="Fns-8h-KE9" secondAttribute="centerX" id="aSn-XW-aAM"/>
-                            <constraint firstItem="iCV-1o-PdF" firstAttribute="centerX" secondItem="Fns-8h-KE9" secondAttribute="centerX" id="exx-J4-mTD"/>
-                            <constraint firstItem="Kfm-Ls-8Kp" firstAttribute="centerX" secondItem="Fns-8h-KE9" secondAttribute="centerX" id="gMZ-vs-nsf"/>
-                            <constraint firstItem="RwW-b8-Acb" firstAttribute="centerX" secondItem="Fns-8h-KE9" secondAttribute="centerX" id="sRy-9h-UnG"/>
-                            <constraint firstItem="PfB-NE-9Tp" firstAttribute="leading" secondItem="Fns-8h-KE9" secondAttribute="leadingMargin" id="xZq-EV-1Gj"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="TwS-fb-oVo"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="wHx-GY-joY" userLabel="Fitness Tracker"/>
-                    <connections>
-                        <outlet property="heightLabel" destination="PfB-NE-9Tp" id="kVQ-6x-dRg"/>
-                        <outlet property="milesLabel" destination="RwW-b8-Acb" id="gsv-rf-Vf6"/>
-                        <outlet property="timerLabel" destination="VTg-Tx-Si7" id="4iJ-rx-uhD"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8gY-H7-ZjI" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="556" y="507"/>
-        </scene>
         <!--Sleep tacker-->
         <scene sceneID="Se7-zg-sXW">
             <objects>
@@ -611,7 +491,7 @@
                         <segue destination="D51-DR-dvg" kind="relationship" relationship="viewControllers" id="Qg2-S5-8OJ"/>
                         <segue destination="rs4-3G-7C7" kind="relationship" relationship="viewControllers" id="VFg-Wj-iIg"/>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="Vsr-uB-PqX"/>
-                        <segue destination="sG2-Uc-3N6" kind="relationship" relationship="viewControllers" id="q4A-WR-yzS"/>
+                        <segue destination="hQ2-pn-2Kx" kind="relationship" relationship="viewControllers" id="RUe-Pg-kZm"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FbL-iO-TQP" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -712,6 +592,245 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eTz-oV-umZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-723.1884057971015" y="-924.10714285714278"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="6RK-AT-k7a">
+            <objects>
+                <viewController id="hQ2-pn-2Kx" customClass="TimerViewController" customModule="OneHourWalker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="r7h-Of-Bro"/>
+                        <viewControllerLayoutGuide type="bottom" id="32k-Bg-tlr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="duO-gw-Ivu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uzu-Ko-gfc" customClass="CustomView" customModule="OneHourWalker" customModuleProvider="target">
+                                <rect key="frame" x="75.5" y="103" width="263" height="85"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CRY-NP-CN1">
+                                        <rect key="frame" x="18" y="8" width="226" height="69"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="53"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="263" id="6oQ-bz-rl9"/>
+                                    <constraint firstAttribute="bottom" secondItem="CRY-NP-CN1" secondAttribute="bottom" constant="8" id="SGN-QP-Qhy"/>
+                                    <constraint firstAttribute="trailing" secondItem="CRY-NP-CN1" secondAttribute="trailing" constant="19" id="YfW-7f-APR"/>
+                                    <constraint firstAttribute="height" constant="85" id="a1e-Cw-gJB"/>
+                                    <constraint firstItem="CRY-NP-CN1" firstAttribute="top" secondItem="Uzu-Ko-gfc" secondAttribute="top" constant="8" id="bEV-Kh-Sb1"/>
+                                    <constraint firstItem="CRY-NP-CN1" firstAttribute="leading" secondItem="Uzu-Ko-gfc" secondAttribute="leading" constant="18" id="yaE-EK-6VA"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00 Miles" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pJy-aW-ymt">
+                                <rect key="frame" x="75.5" y="196" width="263" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="0yB-fJ-oUU"/>
+                                    <constraint firstAttribute="width" constant="263" id="eLk-RT-VrE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="27"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ots-9a-qae" customClass="CustomButton" customModule="OneHourWalker" customModuleProvider="target">
+                                <rect key="frame" x="150.5" y="253" width="113" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="Drd-1d-Dm8"/>
+                                    <constraint firstAttribute="width" constant="113" id="eD9-Uc-6rR"/>
+                                </constraints>
+                                <state key="normal" title="Go">
+                                    <color key="titleColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="startTimerWithSender:" destination="hQ2-pn-2Kx" eventType="touchUpInside" id="XvL-3s-W16"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4OA-i7-0Zx" customClass="CustomButton" customModule="OneHourWalker" customModuleProvider="target">
+                                <rect key="frame" x="150.5" y="309" width="113" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="5Vh-JY-typ"/>
+                                    <constraint firstAttribute="width" constant="113" id="uA4-q6-qM8"/>
+                                </constraints>
+                                <state key="normal" title="Stop">
+                                    <color key="titleColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="stopTimerWithSender:" destination="hQ2-pn-2Kx" eventType="touchUpInside" id="nuC-e9-NdP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Szz-uM-zJF" customClass="CustomButton" customModule="OneHourWalker" customModuleProvider="target">
+                                <rect key="frame" x="150.5" y="365" width="113" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="KL0-M3-gSw"/>
+                                    <constraint firstAttribute="width" constant="113" id="slC-u5-kBK"/>
+                                </constraints>
+                                <state key="normal" title="Share">
+                                    <color key="titleColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="shareWithSender:" destination="hQ2-pn-2Kx" eventType="touchUpInside" id="NBt-Rv-9we"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Height:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UTu-HC-gmQ">
+                                <rect key="frame" x="20" y="421" width="374" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="aIL-0R-FQf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="19"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="UTu-HC-gmQ" firstAttribute="leading" secondItem="duO-gw-Ivu" secondAttribute="leadingMargin" id="32V-fc-ruM"/>
+                            <constraint firstItem="4OA-i7-0Zx" firstAttribute="centerX" secondItem="duO-gw-Ivu" secondAttribute="centerX" id="3xK-er-G7W"/>
+                            <constraint firstItem="Uzu-Ko-gfc" firstAttribute="top" secondItem="r7h-Of-Bro" secondAttribute="bottom" constant="59" id="4Cs-56-siA"/>
+                            <constraint firstItem="4OA-i7-0Zx" firstAttribute="top" secondItem="Ots-9a-qae" secondAttribute="bottom" constant="8" id="Gbj-tE-ZZZ"/>
+                            <constraint firstItem="pJy-aW-ymt" firstAttribute="centerX" secondItem="duO-gw-Ivu" secondAttribute="centerX" id="H1Z-KU-Fyo"/>
+                            <constraint firstItem="Uzu-Ko-gfc" firstAttribute="centerX" secondItem="duO-gw-Ivu" secondAttribute="centerX" id="Jl6-Q1-Bld"/>
+                            <constraint firstItem="UTu-HC-gmQ" firstAttribute="top" secondItem="Szz-uM-zJF" secondAttribute="bottom" constant="8" id="QQm-XX-nSr"/>
+                            <constraint firstItem="pJy-aW-ymt" firstAttribute="top" secondItem="Uzu-Ko-gfc" secondAttribute="bottom" constant="8" id="VwT-pq-haJ"/>
+                            <constraint firstItem="UTu-HC-gmQ" firstAttribute="trailing" secondItem="duO-gw-Ivu" secondAttribute="trailingMargin" id="ZNg-tJ-TnJ"/>
+                            <constraint firstItem="Ots-9a-qae" firstAttribute="centerX" secondItem="duO-gw-Ivu" secondAttribute="centerX" id="nGq-wG-5gh"/>
+                            <constraint firstItem="Szz-uM-zJF" firstAttribute="top" secondItem="4OA-i7-0Zx" secondAttribute="bottom" constant="8" id="ngA-o3-Ige"/>
+                            <constraint firstItem="Ots-9a-qae" firstAttribute="top" secondItem="pJy-aW-ymt" secondAttribute="bottom" constant="8" id="pr7-iN-Mif"/>
+                            <constraint firstItem="Szz-uM-zJF" firstAttribute="centerX" secondItem="duO-gw-Ivu" secondAttribute="centerX" id="uy6-eR-Z72"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vPe-t3-0Fb"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="UoB-wp-5u8"/>
+                    <connections>
+                        <outlet property="heightLabel" destination="UTu-HC-gmQ" id="4Lf-Km-ly3"/>
+                        <outlet property="milesLabel" destination="pJy-aW-ymt" id="aDH-sZ-bXz"/>
+                        <outlet property="timerLabel" destination="CRY-NP-CN1" id="ubW-W9-1nk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dhD-EB-Su5" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="556" y="507"/>
+        </scene>
+        <!--Timer View Controller-->
+        <scene sceneID="dr7-61-Yfd">
+            <objects>
+                <viewController id="zLv-JO-Fud" customClass="TimerViewController" customModule="OneHourWalker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="C4H-Qc-TRF"/>
+                        <viewControllerLayoutGuide type="bottom" id="X5g-Nm-mpb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2qG-Mv-L7U">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MbG-hV-naH" customClass="CustomView" customModule="OneHourWalker" customModuleProvider="target">
+                                <rect key="frame" x="75.5" y="103" width="263" height="85"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HVn-qU-neq">
+                                        <rect key="frame" x="18" y="8" width="226" height="69"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="53"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="85" id="CVb-Ug-Axf"/>
+                                    <constraint firstAttribute="width" constant="263" id="PTf-IC-1Qx"/>
+                                    <constraint firstAttribute="trailing" secondItem="HVn-qU-neq" secondAttribute="trailing" constant="19" id="T06-dw-LNk"/>
+                                    <constraint firstItem="HVn-qU-neq" firstAttribute="top" secondItem="MbG-hV-naH" secondAttribute="top" constant="8" id="XCp-Oa-WUT"/>
+                                    <constraint firstAttribute="bottom" secondItem="HVn-qU-neq" secondAttribute="bottom" constant="8" id="nlX-46-pTe"/>
+                                    <constraint firstItem="HVn-qU-neq" firstAttribute="leading" secondItem="MbG-hV-naH" secondAttribute="leading" constant="18" id="qJn-wu-b5g"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00 Miles" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hbr-DB-DCe">
+                                <rect key="frame" x="75.5" y="196" width="263" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="263" id="6xX-Gw-bFl"/>
+                                    <constraint firstAttribute="height" constant="49" id="DIs-pB-fcA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="27"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4wx-ig-9p8" customClass="CustomButton" customModule="OneHourWalker" customModuleProvider="target">
+                                <rect key="frame" x="150.5" y="253" width="113" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="28c-iI-lfi"/>
+                                    <constraint firstAttribute="width" constant="113" id="Xab-ch-hMc"/>
+                                </constraints>
+                                <state key="normal" title="Go">
+                                    <color key="titleColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="startTimerWithSender:" destination="zLv-JO-Fud" eventType="touchUpInside" id="Kh9-VR-SAS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="elO-fE-PtS" customClass="CustomButton" customModule="OneHourWalker" customModuleProvider="target">
+                                <rect key="frame" x="150.5" y="309" width="113" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="113" id="lkP-Nm-KlG"/>
+                                    <constraint firstAttribute="height" constant="48" id="u5A-Il-bXY"/>
+                                </constraints>
+                                <state key="normal" title="Stop">
+                                    <color key="titleColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="stopTimerWithSender:" destination="zLv-JO-Fud" eventType="touchUpInside" id="w7d-Gz-lpG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aTT-zm-UEa" customClass="CustomButton" customModule="OneHourWalker" customModuleProvider="target">
+                                <rect key="frame" x="150.5" y="365" width="113" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="113" id="OUV-TF-j8o"/>
+                                    <constraint firstAttribute="height" constant="48" id="P7f-7v-HMs"/>
+                                </constraints>
+                                <state key="normal" title="Share">
+                                    <color key="titleColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="shareWithSender:" destination="zLv-JO-Fud" eventType="touchUpInside" id="CBs-ZL-h1n"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Height:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6km-pm-Ufn">
+                                <rect key="frame" x="20" y="421" width="374" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="Qic-Qg-TFg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="19"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="elO-fE-PtS" firstAttribute="centerX" secondItem="2qG-Mv-L7U" secondAttribute="centerX" id="59c-5t-DIl"/>
+                            <constraint firstItem="aTT-zm-UEa" firstAttribute="top" secondItem="elO-fE-PtS" secondAttribute="bottom" constant="8" id="GGH-ty-bRy"/>
+                            <constraint firstItem="MbG-hV-naH" firstAttribute="top" secondItem="C4H-Qc-TRF" secondAttribute="bottom" constant="59" id="Kh8-s8-bdh"/>
+                            <constraint firstItem="elO-fE-PtS" firstAttribute="top" secondItem="4wx-ig-9p8" secondAttribute="bottom" constant="8" id="QAS-aH-p2L"/>
+                            <constraint firstItem="Hbr-DB-DCe" firstAttribute="top" secondItem="MbG-hV-naH" secondAttribute="bottom" constant="8" id="QAs-vc-3t0"/>
+                            <constraint firstItem="aTT-zm-UEa" firstAttribute="centerX" secondItem="2qG-Mv-L7U" secondAttribute="centerX" id="VqN-TB-cyF"/>
+                            <constraint firstItem="4wx-ig-9p8" firstAttribute="centerX" secondItem="2qG-Mv-L7U" secondAttribute="centerX" id="en5-wt-NkR"/>
+                            <constraint firstItem="Hbr-DB-DCe" firstAttribute="centerX" secondItem="2qG-Mv-L7U" secondAttribute="centerX" id="jat-z3-oKd"/>
+                            <constraint firstItem="6km-pm-Ufn" firstAttribute="trailing" secondItem="2qG-Mv-L7U" secondAttribute="trailingMargin" id="jci-7A-Q2n"/>
+                            <constraint firstItem="6km-pm-Ufn" firstAttribute="leading" secondItem="2qG-Mv-L7U" secondAttribute="leadingMargin" id="rXD-Ew-JRv"/>
+                            <constraint firstItem="MbG-hV-naH" firstAttribute="centerX" secondItem="2qG-Mv-L7U" secondAttribute="centerX" id="xCk-Qs-gGa"/>
+                            <constraint firstItem="4wx-ig-9p8" firstAttribute="top" secondItem="Hbr-DB-DCe" secondAttribute="bottom" constant="8" id="yf8-gL-qVe"/>
+                            <constraint firstItem="6km-pm-Ufn" firstAttribute="top" secondItem="aTT-zm-UEa" secondAttribute="bottom" constant="8" id="zTh-go-wLF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="XaK-Rw-eLE"/>
+                    </view>
+                    <connections>
+                        <outlet property="heightLabel" destination="6km-pm-Ufn" id="jYT-UI-8NZ"/>
+                        <outlet property="milesLabel" destination="Hbr-DB-DCe" id="rco-MZ-iBY"/>
+                        <outlet property="timerLabel" destination="HVn-qU-neq" id="Uia-9j-2X1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TA7-xZ-rDM" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="556" y="507"/>
         </scene>
     </scenes>
     <resources>
