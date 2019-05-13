@@ -493,10 +493,16 @@
                             <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="LeftArrow" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fKE-iB-Deb">
                                 <rect key="frame" x="20" y="190" width="25" height="25"/>
                                 <state key="normal" image="icons8-long-arrow-left-filled-25"/>
+                                <connections>
+                                    <action selector="goMay:" destination="eZc-Xe-TGD" eventType="touchUpInside" id="uay-XO-rrJ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="RightArrow" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gge-wq-emV">
                                 <rect key="frame" x="369" y="190" width="25" height="25"/>
                                 <state key="normal" image="icons8-right-arrow-filled-25"/>
+                                <connections>
+                                    <action selector="goJune:" destination="eZc-Xe-TGD" eventType="touchUpInside" id="9nG-ry-igb"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xbU-6W-BXM">
                                 <rect key="frame" x="169" y="44" width="76" height="84"/>
@@ -543,6 +549,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="OvX-mH-cLm"/>
                     <connections>
+                        <outlet property="monthLabel" destination="r1v-lR-rHt" id="yH1-xl-dVe"/>
                         <outletCollection property="calander" destination="Hih-22-VCt" collectionClass="NSMutableArray" id="mTY-2o-hRF"/>
                         <outletCollection property="calander" destination="Qt1-J7-tJR" collectionClass="NSMutableArray" id="WIf-Ou-bHp"/>
                         <outletCollection property="calander" destination="q3H-Ot-MRc" collectionClass="NSMutableArray" id="u7K-yS-Nfp"/>
