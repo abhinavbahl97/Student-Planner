@@ -171,7 +171,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="7H1-Qc-3OZ">
-<<<<<<< HEAD
+
                                 <rect key="frame" x="5" y="223" width="404" height="579"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="OZd-dP-MbI" userLabel="DaysLabelStack">
@@ -180,88 +180,61 @@
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F63-BZ-ZVJ">
                                                 <rect key="frame" x="0.0" y="0.0" width="30" height="99"/>
                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
-=======
-                                <rect key="frame" x="5" y="163" width="404" height="590"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="OZd-dP-MbI" userLabel="DaysLabelStack">
-                                        <rect key="frame" x="0.0" y="0.0" width="402" height="110"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F63-BZ-ZVJ">
-                                                <rect key="frame" x="0.0" y="0.0" width="30" height="110"/>
-                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
->>>>>>> 7de4848f5dc0f86cd5e3b9b47914fdde0a083eb4
+
                                                 <state key="normal" title="S">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lW0-Tl-bFk">
-<<<<<<< HEAD
+
                                                 <rect key="frame" x="62" y="0.0" width="30" height="99"/>
                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
-=======
-                                                <rect key="frame" x="62" y="0.0" width="30" height="110"/>
-                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
->>>>>>> 7de4848f5dc0f86cd5e3b9b47914fdde0a083eb4
+
                                                 <state key="normal" title="M">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Khy-gN-UeB">
-<<<<<<< HEAD
+
                                                 <rect key="frame" x="124" y="0.0" width="30" height="99"/>
                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
-=======
-                                                <rect key="frame" x="124" y="0.0" width="30" height="110"/>
-                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
->>>>>>> 7de4848f5dc0f86cd5e3b9b47914fdde0a083eb4
+
                                                 <state key="normal" title="T">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HfL-ll-bU0">
-<<<<<<< HEAD
+
                                                 <rect key="frame" x="186" y="0.0" width="30" height="99"/>
                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
-=======
-                                                <rect key="frame" x="186" y="0.0" width="30" height="110"/>
-                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
->>>>>>> 7de4848f5dc0f86cd5e3b9b47914fdde0a083eb4
+
                                                 <state key="normal" title="W">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xbH-Ax-39l">
-<<<<<<< HEAD
+
                                                 <rect key="frame" x="248" y="0.0" width="30" height="99"/>
                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
-=======
-                                                <rect key="frame" x="248" y="0.0" width="30" height="110"/>
-                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
->>>>>>> 7de4848f5dc0f86cd5e3b9b47914fdde0a083eb4
+
                                                 <state key="normal" title="T">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zpQ-wj-lLP">
-<<<<<<< HEAD
+
                                                 <rect key="frame" x="310" y="0.0" width="30" height="99"/>
                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
-=======
-                                                <rect key="frame" x="310" y="0.0" width="30" height="110"/>
-                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
->>>>>>> 7de4848f5dc0f86cd5e3b9b47914fdde0a083eb4
+
                                                 <state key="normal" title="F">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gnl-2h-1hy">
-<<<<<<< HEAD
+
                                                 <rect key="frame" x="372" y="0.0" width="30" height="99"/>
                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
-=======
-                                                <rect key="frame" x="372" y="0.0" width="30" height="110"/>
-                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
->>>>>>> 7de4848f5dc0f86cd5e3b9b47914fdde0a083eb4
+
                                                 <state key="normal" title="S">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -269,11 +242,9 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="QQl-zQ-7a2" userLabel="FirstRowStack">
-<<<<<<< HEAD
+
                                         <rect key="frame" x="0.0" y="149" width="404" height="30"/>
-=======
-                                        <rect key="frame" x="0.0" y="160" width="404" height="30"/>
->>>>>>> 7de4848f5dc0f86cd5e3b9b47914fdde0a083eb4
+
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hih-22-VCt">
                                                 <rect key="frame" x="0.0" y="0.0" width="45.5" height="30"/>
@@ -318,11 +289,9 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="fl4-fx-hrh" userLabel="SecondRowStack">
-<<<<<<< HEAD
+
                                         <rect key="frame" x="0.0" y="229" width="404" height="30"/>
-=======
-                                        <rect key="frame" x="0.0" y="240" width="404" height="30"/>
->>>>>>> 7de4848f5dc0f86cd5e3b9b47914fdde0a083eb4
+
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HwZ-Iz-xEF">
                                                 <rect key="frame" x="0.0" y="0.0" width="45.5" height="30"/>
@@ -376,11 +345,9 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="tLk-ig-07z" userLabel="ThirdRowStack">
-<<<<<<< HEAD
+
                                         <rect key="frame" x="0.0" y="309" width="404" height="30"/>
-=======
-                                        <rect key="frame" x="0.0" y="320" width="404" height="30"/>
->>>>>>> 7de4848f5dc0f86cd5e3b9b47914fdde0a083eb4
+
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KEj-by-xWX">
                                                 <rect key="frame" x="0.0" y="0.0" width="45.5" height="30"/>
@@ -434,11 +401,9 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="gJL-wu-h0O" userLabel="FourthRowStack">
-<<<<<<< HEAD
+
                                         <rect key="frame" x="0.0" y="389" width="404" height="30"/>
-=======
-                                        <rect key="frame" x="0.0" y="400" width="404" height="30"/>
->>>>>>> 7de4848f5dc0f86cd5e3b9b47914fdde0a083eb4
+
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cOm-bs-Kaf">
                                                 <rect key="frame" x="0.0" y="0.0" width="45.5" height="30"/>
@@ -471,11 +436,9 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="Sfh-HJ-mhR" userLabel="FithRowStack">
-<<<<<<< HEAD
+
                                         <rect key="frame" x="0.0" y="469" width="404" height="30"/>
-=======
-                                        <rect key="frame" x="0.0" y="480" width="404" height="30"/>
->>>>>>> 7de4848f5dc0f86cd5e3b9b47914fdde0a083eb4
+
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g52-aM-Xqn">
                                                 <rect key="frame" x="0.0" y="0.0" width="45.5" height="30"/>
@@ -508,11 +471,9 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="ybt-pb-wo2" userLabel="SixthRowStack">
-<<<<<<< HEAD
+
                                         <rect key="frame" x="0.0" y="549" width="404" height="30"/>
-=======
-                                        <rect key="frame" x="0.0" y="560" width="404" height="30"/>
->>>>>>> 7de4848f5dc0f86cd5e3b9b47914fdde0a083eb4
+
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J0I-kP-YbQ">
                                                 <rect key="frame" x="0.0" y="0.0" width="45.5" height="30"/>
@@ -763,12 +724,9 @@
         <image name="icons8-right-arrow-filled-25" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
-<<<<<<< HEAD
+
         <segue reference="RGv-pn-CUl"/>
         <segue reference="hbO-W0-MDF"/>
-=======
-        <segue reference="Esp-i9-LA7"/>
-        <segue reference="Qg2-S5-8OJ"/>
->>>>>>> 7de4848f5dc0f86cd5e3b9b47914fdde0a083eb4
+
     </inferredMetricsTieBreakers>
 </document>
