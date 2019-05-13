@@ -2,4 +2,114 @@
 <Bucket
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GroupProject/SleepViewController.swift"
+            timestampString = "579476459.8771451"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "7"
+            endingLineNumber = "7"
+            landmarkName = "SleepViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GroupProject.SleepViewController.displayTimeLabel.getter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "GroupProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jonathan_rosales/Documents/S2019/IOS%20Dev/GroupProject/GroupProject/SleepViewController.swift"
+                  timestampString = "579476460.166218"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "7"
+                  endingLineNumber = "7"
+                  offsetFromSymbolStart = "114">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GroupProject.SleepViewController.displayTimeLabel.setter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "GroupProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jonathan_rosales/Documents/S2019/IOS%20Dev/GroupProject/GroupProject/SleepViewController.swift"
+                  timestampString = "579476460.168638"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "7"
+                  endingLineNumber = "7"
+                  offsetFromSymbolStart = "128">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GroupProject.SleepViewController.displayTimeLabel.modify : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "GroupProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jonathan_rosales/Documents/S2019/IOS%20Dev/GroupProject/GroupProject/SleepViewController.swift"
+                  timestampString = "579476460.17107"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "18">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GroupProject.SleepViewController.displayTimeLabel.modify : Swift.Optional&lt;__C.UILabel&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "GroupProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jonathan_rosales/Documents/S2019/IOS%20Dev/GroupProject/GroupProject/SleepViewController.swift"
+                  timestampString = "579476460.173666"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "7"
+                  endingLineNumber = "7"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GroupProject.SleepViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; GroupProject.SleepViewController"
+                  moduleName = "GroupProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jonathan_rosales/Documents/S2019/IOS%20Dev/GroupProject/GroupProject/SleepViewController.swift"
+                  timestampString = "579476460.176066"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "7"
+                  endingLineNumber = "7"
+                  offsetFromSymbolStart = "219">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GroupProject.SleepViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;GroupProject.SleepViewController&gt;"
+                  moduleName = "GroupProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jonathan_rosales/Documents/S2019/IOS%20Dev/GroupProject/GroupProject/SleepViewController.swift"
+                  timestampString = "579476460.178193"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "7"
+                  endingLineNumber = "7"
+                  offsetFromSymbolStart = "139">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
