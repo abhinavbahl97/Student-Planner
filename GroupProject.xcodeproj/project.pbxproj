@@ -16,6 +16,9 @@
 		209A54F02268D943009A5BF5 /* GroupProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209A54EF2268D943009A5BF5 /* GroupProjectTests.swift */; };
 		209A54FB2268D943009A5BF5 /* GroupProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209A54FA2268D943009A5BF5 /* GroupProjectUITests.swift */; };
 		209A55092268E6B3009A5BF5 /* CalanderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209A55082268E6B3009A5BF5 /* CalanderViewController.swift */; };
+		690182E52288D2400009E3D9 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690182E42288D2400009E3D9 /* CustomView.swift */; };
+		690182E72288D25D0009E3D9 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690182E62288D25D0009E3D9 /* CustomButton.swift */; };
+		69082A6122820A1B00123078 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69082A6022820A1B00123078 /* TimerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		209A54FA2268D943009A5BF5 /* GroupProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupProjectUITests.swift; sourceTree = "<group>"; };
 		209A54FC2268D943009A5BF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		209A55082268E6B3009A5BF5 /* CalanderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalanderViewController.swift; sourceTree = "<group>"; };
+		690182E42288D2400009E3D9 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		690182E62288D25D0009E3D9 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		69082A6022820A1B00123078 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,9 @@
 				209A55082268E6B3009A5BF5 /* CalanderViewController.swift */,
 				209A54DC2268D941009A5BF5 /* ViewController.swift */,
 				209A54DE2268D941009A5BF5 /* Main.storyboard */,
+				69082A6022820A1B00123078 /* TimerViewController.swift */,
+				690182E42288D2400009E3D9 /* CustomView.swift */,
+				690182E62288D25D0009E3D9 /* CustomButton.swift */,
 				200EEC31226F87C800E89A89 /* EventViewController.swift */,
 				209A54E12268D943009A5BF5 /* Assets.xcassets */,
 				209A54E32268D943009A5BF5 /* LaunchScreen.storyboard */,
@@ -263,9 +272,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				209A55092268E6B3009A5BF5 /* CalanderViewController.swift in Sources */,
+				69082A6122820A1B00123078 /* TimerViewController.swift in Sources */,
 				200EEC32226F87C800E89A89 /* EventViewController.swift in Sources */,
+				690182E52288D2400009E3D9 /* CustomView.swift in Sources */,
 				209A54DD2268D941009A5BF5 /* ViewController.swift in Sources */,
 				209A54DB2268D941009A5BF5 /* AppDelegate.swift in Sources */,
+				690182E72288D25D0009E3D9 /* CustomButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,13 +453,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = S9436V8M42;
+				DEVELOPMENT_TEAM = 5M33VAPHSV;
 				INFOPLIST_FILE = GroupProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = CMSC436.GroupProject;
+				PRODUCT_BUNDLE_IDENTIFIER = CMSC436.GroupProjectTEST;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -459,13 +471,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = S9436V8M42;
+				DEVELOPMENT_TEAM = 5M33VAPHSV;
 				INFOPLIST_FILE = GroupProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = CMSC436.GroupProject;
+				PRODUCT_BUNDLE_IDENTIFIER = CMSC436.GroupProjectTEST;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
