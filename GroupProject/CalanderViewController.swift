@@ -33,8 +33,52 @@ extension Day{
 }
 
 class CalanderViewController: UIViewController {
-
+    
+    var isMay = true
+    
     @IBOutlet var calander: [UIButton]!
+    
+    @IBOutlet weak var monthLabel: UILabel!
+    
+    @IBAction func goJune(_ sender: Any) {
+        if isMay{
+            isMay = false
+            monthLabel.text = "June 2019"
+            var curr = 26
+            var june = false
+            var may = true
+            var july = false
+            
+            for button in calander{
+                button.setTitle("\(curr)", for: UIControl.State.normal)
+                curr += 1
+                button.setTitleColor(UIColor.white, for: .normal)
+                if may == true || july == true {
+                    button.setTitleColor(UIColor.darkGray, for: .normal)
+                }
+                if june == false && curr == 32{
+                    curr = 1
+                    june = true
+                    may = false
+                }else if june == true && curr == 30{
+                    curr = 1
+                    june = false
+                    july = true
+                }
+            }
+        }
+    }
+    
+    @IBAction func goMay(_ sender: Any) {
+        if isMay == false{
+            isMay = true
+            self.viewDidLoad()
+        }
+    }
+    
+    
+    
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destVC = segue.destination as! EventViewController
@@ -46,7 +90,7 @@ class CalanderViewController: UIViewController {
                 toReturn = day
             }
         }
-        
+         
         destVC.day = toReturn
     }
     
@@ -63,11 +107,13 @@ class CalanderViewController: UIViewController {
         var newDate: Date?
         var newDay: Day
         
+        monthLabel.text = "May 2019"
         dateComponents.year = 2019
         //the following sets up the numbers for the calander and assigns dates to May dates adding them to "days" collection
         for button in calander{
             button.setTitle("\(curr)", for: UIControl.State.normal)
             button.setTitleColor(UIColor.white, for: .normal)
+            button.titleLabel?.font = UIFont.italicSystemFont(ofSize: 19)
             curr += 1
             if june{
                 button.setTitleColor(UIColor.darkGray, for: .normal)
@@ -94,7 +140,11 @@ class CalanderViewController: UIViewController {
                 days.append(newDay)
                 
             }
+            
         }
+        self.tabBarController?.hidesBottomBarWhenPushed = false
+        
+        
     }
     
     @IBAction func addEvent(_ sender: UIButton) {

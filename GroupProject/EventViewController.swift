@@ -9,6 +9,8 @@
 import UIKit
 
 class EventViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+   
 
     
     var day = Day(date: Date())
@@ -66,12 +68,7 @@ class EventViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     func update(){
         
-        let data = Date()
         
-        let toPush = Event(name: "Final Demo", dueDate: data, info: "CMSC436")
-        events = [toPush]
-        let h = Event(name: "Review", dueDate: data, info: "CMSC434")
-        //events.append(h)
     }
     
 
