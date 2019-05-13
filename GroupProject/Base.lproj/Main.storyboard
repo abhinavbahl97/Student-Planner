@@ -119,7 +119,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="TwS-fb-oVo"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Fitness Tracker" id="wHx-GY-joY" userLabel="Fitness Tracker"/>
+                    <tabBarItem key="tabBarItem" title="Fitness Tracker" image="icons8-exercise-25" selectedImage="icons8-exercise-25" id="wHx-GY-joY" userLabel="Fitness Tracker"/>
                     <connections>
                         <outlet property="heightLabel" destination="PfB-NE-9Tp" id="kVQ-6x-dRg"/>
                         <outlet property="milesLabel" destination="RwW-b8-Acb" id="gsv-rf-Vf6"/>
@@ -128,7 +128,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8gY-H7-ZjI" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="556" y="507"/>
+            <point key="canvasLocation" x="187" y="-162"/>
         </scene>
         <!--Calander View Controller-->
         <scene sceneID="aDP-0f-fYR">
@@ -756,23 +756,25 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="thF-3u-8U0"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Sleep Analysis" id="F3O-hK-x4F"/>
+                    <tabBarItem key="tabBarItem" title="Sleep Analysis" image="icons8-sleeping-in-bed-filled-25" selectedImage="icons8-sleeping-in-bed-filled-25" id="F3O-hK-x4F"/>
                     <connections>
                         <outlet property="displayTimeLabel" destination="efK-P7-NvV" id="tRi-Gp-Add"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j8a-rX-PdX" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1239" y="492"/>
+            <point key="canvasLocation" x="187" y="717"/>
         </scene>
     </scenes>
     <resources>
         <image name="icons8-calendar-20" width="20" height="20"/>
+        <image name="icons8-exercise-25" width="25" height="25"/>
         <image name="icons8-go-back-35" width="35" height="35"/>
         <image name="icons8-long-arrow-left-filled-25" width="25" height="25"/>
         <image name="icons8-mortarboard-filled-75" width="75" height="75"/>
         <image name="icons8-plus-25" width="25" height="25"/>
         <image name="icons8-right-arrow-filled-25" width="25" height="25"/>
+        <image name="icons8-sleeping-in-bed-filled-25" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="RGv-pn-CUl"/>

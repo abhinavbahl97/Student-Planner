@@ -32,7 +32,7 @@ class EventViewController: UIViewController, UITableViewDelegate, UITableViewDat
         df.dateFormat = "d, yyyy"
         labelOutlet.text = "May \(df.string(from: day.date))"
         events = day.events
-        //update()
+        update()
         
     }
     
@@ -67,6 +67,9 @@ class EventViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     func update(){
+        if events!.isEmpty{
+            events?.append(Event(name: "No HW", dueDate: Date(), info: ":)"))
+        }
         
         
     }
