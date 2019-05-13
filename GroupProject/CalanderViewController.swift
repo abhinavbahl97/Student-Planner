@@ -68,6 +68,7 @@ class CalanderViewController: UIViewController {
         for button in calander{
             button.setTitle("\(curr)", for: UIControl.State.normal)
             button.setTitleColor(UIColor.white, for: .normal)
+            button.titleLabel?.font = UIFont.italicSystemFont(ofSize: 19)
             curr += 1
             if june{
                 button.setTitleColor(UIColor.darkGray, for: .normal)
