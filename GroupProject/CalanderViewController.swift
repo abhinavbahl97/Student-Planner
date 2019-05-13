@@ -95,7 +95,11 @@ class CalanderViewController: UIViewController {
                 days.append(newDay)
                 
             }
+            
         }
+        self.tabBarController?.hidesBottomBarWhenPushed = false
+        
+        
     }
     
     @IBAction func addEvent(_ sender: UIButton) {

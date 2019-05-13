@@ -29,7 +29,7 @@
         <!--Item-->
         <scene sceneID="Bye-uh-15U">
             <objects>
-                <viewController id="sG2-Uc-3N6" customClass="TimerViewController" customModule="OneHourWalker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="sG2-Uc-3N6" customClass="TimerViewController" customModule="GroupProject" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2Rs-dW-Jdr"/>
                         <viewControllerLayoutGuide type="bottom" id="x8Y-QH-q56"/>
@@ -38,7 +38,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kfm-Ls-8Kp" customClass="CustomView" customModule="OneHourWalker" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kfm-Ls-8Kp" customClass="CustomView" customModule="GroupProject" customModuleProvider="target">
                                 <rect key="frame" x="75.5" y="103" width="263" height="85"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VTg-Tx-Si7">
@@ -68,7 +68,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5tk-Ed-47y" customClass="CustomButton" customModule="OneHourWalker" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5tk-Ed-47y" customClass="CustomButton" customModule="GroupProject" customModuleProvider="target">
                                 <rect key="frame" x="150.5" y="253" width="113" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="113" id="Nne-D3-puP"/>
@@ -81,7 +81,7 @@
                                     <action selector="startTimerWithSender:" destination="sG2-Uc-3N6" eventType="touchUpInside" id="Xxx-hx-Rlc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W0Y-Jm-ugE" customClass="CustomButton" customModule="OneHourWalker" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W0Y-Jm-ugE" customClass="CustomButton" customModule="GroupProject" customModuleProvider="target">
                                 <rect key="frame" x="150.5" y="309" width="113" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="113" id="3uf-k7-2Ln"/>
@@ -94,7 +94,7 @@
                                     <action selector="stopTimerWithSender:" destination="sG2-Uc-3N6" eventType="touchUpInside" id="00M-Hk-s1r"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iCV-1o-PdF" customClass="CustomButton" customModule="OneHourWalker" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iCV-1o-PdF" customClass="CustomButton" customModule="GroupProject" customModuleProvider="target">
                                 <rect key="frame" x="150.5" y="365" width="113" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="113" id="DUp-R4-UcE"/>
@@ -162,7 +162,7 @@
             </objects>
             <point key="canvasLocation" x="-686" y="781"/>
         </scene>
-        <!--Calander-->
+        <!--Calander View Controller-->
         <scene sceneID="aDP-0f-fYR">
             <objects>
                 <viewController storyboardIdentifier="CalanderViewController" id="eZc-Xe-TGD" customClass="CalanderViewController" customModule="GroupProject" customModuleProvider="target" sceneMemberID="viewController">
@@ -171,70 +171,56 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="7H1-Qc-3OZ">
-
-                                <rect key="frame" x="5" y="223" width="404" height="579"/>
+                                <rect key="frame" x="5" y="223" width="404" height="530"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="OZd-dP-MbI" userLabel="DaysLabelStack">
-                                        <rect key="frame" x="0.0" y="0.0" width="402" height="99"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="402" height="50"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F63-BZ-ZVJ">
-                                                <rect key="frame" x="0.0" y="0.0" width="30" height="99"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="30" height="50"/>
                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
-
                                                 <state key="normal" title="S">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lW0-Tl-bFk">
-
-                                                <rect key="frame" x="62" y="0.0" width="30" height="99"/>
+                                                <rect key="frame" x="62" y="0.0" width="30" height="50"/>
                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
-
                                                 <state key="normal" title="M">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Khy-gN-UeB">
-
-                                                <rect key="frame" x="124" y="0.0" width="30" height="99"/>
+                                                <rect key="frame" x="124" y="0.0" width="30" height="50"/>
                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
-
                                                 <state key="normal" title="T">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HfL-ll-bU0">
-
-                                                <rect key="frame" x="186" y="0.0" width="30" height="99"/>
+                                                <rect key="frame" x="186" y="0.0" width="30" height="50"/>
                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
-
                                                 <state key="normal" title="W">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xbH-Ax-39l">
-
-                                                <rect key="frame" x="248" y="0.0" width="30" height="99"/>
+                                                <rect key="frame" x="248" y="0.0" width="30" height="50"/>
                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
-
                                                 <state key="normal" title="T">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zpQ-wj-lLP">
-
-                                                <rect key="frame" x="310" y="0.0" width="30" height="99"/>
+                                                <rect key="frame" x="310" y="0.0" width="30" height="50"/>
                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
-
                                                 <state key="normal" title="F">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gnl-2h-1hy">
-
-                                                <rect key="frame" x="372" y="0.0" width="30" height="99"/>
+                                                <rect key="frame" x="372" y="0.0" width="30" height="50"/>
                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
-
                                                 <state key="normal" title="S">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -242,9 +228,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="QQl-zQ-7a2" userLabel="FirstRowStack">
-
-                                        <rect key="frame" x="0.0" y="149" width="404" height="30"/>
-
+                                        <rect key="frame" x="0.0" y="100" width="404" height="30"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hih-22-VCt">
                                                 <rect key="frame" x="0.0" y="0.0" width="45.5" height="30"/>
@@ -289,9 +273,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="fl4-fx-hrh" userLabel="SecondRowStack">
-
-                                        <rect key="frame" x="0.0" y="229" width="404" height="30"/>
-
+                                        <rect key="frame" x="0.0" y="180" width="404" height="30"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HwZ-Iz-xEF">
                                                 <rect key="frame" x="0.0" y="0.0" width="45.5" height="30"/>
@@ -345,9 +327,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="tLk-ig-07z" userLabel="ThirdRowStack">
-
-                                        <rect key="frame" x="0.0" y="309" width="404" height="30"/>
-
+                                        <rect key="frame" x="0.0" y="260" width="404" height="30"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KEj-by-xWX">
                                                 <rect key="frame" x="0.0" y="0.0" width="45.5" height="30"/>
@@ -401,9 +381,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="gJL-wu-h0O" userLabel="FourthRowStack">
-
-                                        <rect key="frame" x="0.0" y="389" width="404" height="30"/>
-
+                                        <rect key="frame" x="0.0" y="340" width="404" height="30"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cOm-bs-Kaf">
                                                 <rect key="frame" x="0.0" y="0.0" width="45.5" height="30"/>
@@ -436,9 +414,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="Sfh-HJ-mhR" userLabel="FithRowStack">
-
-                                        <rect key="frame" x="0.0" y="469" width="404" height="30"/>
-
+                                        <rect key="frame" x="0.0" y="420" width="404" height="30"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g52-aM-Xqn">
                                                 <rect key="frame" x="0.0" y="0.0" width="45.5" height="30"/>
@@ -471,9 +447,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="ybt-pb-wo2" userLabel="SixthRowStack">
-
-                                        <rect key="frame" x="0.0" y="549" width="404" height="30"/>
-
+                                        <rect key="frame" x="0.0" y="500" width="404" height="30"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J0I-kP-YbQ">
                                                 <rect key="frame" x="0.0" y="0.0" width="45.5" height="30"/>
@@ -567,7 +541,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="4bx-qv-OU6"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Calander" image="icons8-calendar-20" selectedImage="icons8-calendar-20" id="j9f-e2-PxN"/>
+                    <navigationItem key="navigationItem" id="OvX-mH-cLm"/>
                     <connections>
                         <outletCollection property="calander" destination="Hih-22-VCt" collectionClass="NSMutableArray" id="mTY-2o-hRF"/>
                         <outletCollection property="calander" destination="Qt1-J7-tJR" collectionClass="NSMutableArray" id="WIf-Ou-bHp"/>
@@ -615,7 +589,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IeB-57-WLw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-723.1884057971015" y="-924.10714285714278"/>
+            <point key="canvasLocation" x="186.95652173913044" y="-924.10714285714278"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="ewP-wc-7np">
@@ -627,7 +601,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="eZc-Xe-TGD" kind="relationship" relationship="viewControllers" id="Qg2-S5-8OJ"/>
+                        <segue destination="D51-DR-dvg" kind="relationship" relationship="viewControllers" id="Qg2-S5-8OJ"/>
                         <segue destination="rs4-3G-7C7" kind="relationship" relationship="viewControllers" id="VFg-Wj-iIg"/>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="Vsr-uB-PqX"/>
                         <segue destination="sG2-Uc-3N6" kind="relationship" relationship="viewControllers" id="q4A-WR-yzS"/>
@@ -646,7 +620,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fWi-UP-Yk4">
-                                <rect key="frame" x="0.0" y="142" width="414" height="720"/>
+                                <rect key="frame" x="0.0" y="142" width="414" height="671"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="124" id="8X2-CW-j1n" customClass="Cell" customModule="GroupProject" customModuleProvider="target">
@@ -690,7 +664,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="icons8-go-back-35"/>
                                 <connections>
-                                    <segue destination="eZc-Xe-TGD" kind="show" id="hbO-W0-MDF"/>
+                                    <segue destination="eZc-Xe-TGD" kind="show" id="qqR-6g-F0a"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -712,7 +686,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Wa-OR-VYy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="37.681159420289859" y="-924.10714285714278"/>
+            <point key="canvasLocation" x="1815.9420289855075" y="-924.10714285714278"/>
+        </scene>
+        <!--Calander-->
+        <scene sceneID="q5O-a3-dsi">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="D51-DR-dvg" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Calander" image="icons8-calendar-20" selectedImage="icons8-calendar-20" id="j9f-e2-PxN"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9mb-Rr-Kki">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="eZc-Xe-TGD" kind="relationship" relationship="rootViewController" id="IAM-pH-rBu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eTz-oV-umZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-723.1884057971015" y="-924.10714285714278"/>
         </scene>
     </scenes>
     <resources>
@@ -724,9 +716,7 @@
         <image name="icons8-right-arrow-filled-25" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
-
         <segue reference="RGv-pn-CUl"/>
-        <segue reference="hbO-W0-MDF"/>
-
+        <segue reference="IAM-pH-rBu"/>
     </inferredMetricsTieBreakers>
 </document>
