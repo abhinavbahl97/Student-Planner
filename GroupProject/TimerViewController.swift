@@ -5,14 +5,6 @@
 //  Created by abhinav bahl on 5/7/19.
 //  Copyright © 2019 Jonathan Kevin Rosales. All rights reserved.
 //
-
-//
-//  FitnessViewController.swift
-//  GroupProject
-//
-//  Created by abhinav bahl on 5/7/19.
-//  Copyright © 2019 Jonathan Kevin Rosales. All rights reserved.
-//
 import UIKit
 import CoreLocation
 import HealthKit
@@ -125,7 +117,6 @@ class TimerViewController: UIViewController, CLLocationManagerDelegate {
 
             self.height = userHeight as? HKQuantitySample
 
-            // The height is formatted to the user's locale.
             if let meters = self.height?.quantity.doubleValue(for: HKUnit.meter()) {
                 let formatHeight = LengthFormatter()
                 formatHeight.isForPersonHeightUse = true

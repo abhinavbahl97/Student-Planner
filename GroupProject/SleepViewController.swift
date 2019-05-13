@@ -21,7 +21,7 @@ class SleepViewController: UIViewController {
         let typestoShare = Set([
             HKObjectType.categoryType(forIdentifier: HKCategoryTypeIdentifier.sleepAnalysis)!
             ])
-        self.view.backgroundColor = UIColor.black
+        self.view.backgroundColor = UIColor.white
         self.health.requestAuthorization(toShare: typestoShare, read: typestoRead) { (success, error) -> Void in
             if success == false {
                 NSLog(" Display not allowed")
