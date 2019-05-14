@@ -673,27 +673,15 @@
                                     <action selector="shareWithSender:" destination="hQ2-pn-2Kx" eventType="touchUpInside" id="NBt-Rv-9we"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Height:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UTu-HC-gmQ">
-                                <rect key="frame" x="20" y="421" width="374" height="31"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="31" id="aIL-0R-FQf"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="19"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="UTu-HC-gmQ" firstAttribute="leading" secondItem="duO-gw-Ivu" secondAttribute="leadingMargin" id="32V-fc-ruM"/>
                             <constraint firstItem="4OA-i7-0Zx" firstAttribute="centerX" secondItem="duO-gw-Ivu" secondAttribute="centerX" id="3xK-er-G7W"/>
                             <constraint firstItem="Uzu-Ko-gfc" firstAttribute="top" secondItem="r7h-Of-Bro" secondAttribute="bottom" constant="59" id="4Cs-56-siA"/>
                             <constraint firstItem="4OA-i7-0Zx" firstAttribute="top" secondItem="Ots-9a-qae" secondAttribute="bottom" constant="8" id="Gbj-tE-ZZZ"/>
                             <constraint firstItem="pJy-aW-ymt" firstAttribute="centerX" secondItem="duO-gw-Ivu" secondAttribute="centerX" id="H1Z-KU-Fyo"/>
                             <constraint firstItem="Uzu-Ko-gfc" firstAttribute="centerX" secondItem="duO-gw-Ivu" secondAttribute="centerX" id="Jl6-Q1-Bld"/>
-                            <constraint firstItem="UTu-HC-gmQ" firstAttribute="top" secondItem="Szz-uM-zJF" secondAttribute="bottom" constant="8" id="QQm-XX-nSr"/>
                             <constraint firstItem="pJy-aW-ymt" firstAttribute="top" secondItem="Uzu-Ko-gfc" secondAttribute="bottom" constant="8" id="VwT-pq-haJ"/>
-                            <constraint firstItem="UTu-HC-gmQ" firstAttribute="trailing" secondItem="duO-gw-Ivu" secondAttribute="trailingMargin" id="ZNg-tJ-TnJ"/>
                             <constraint firstItem="Ots-9a-qae" firstAttribute="centerX" secondItem="duO-gw-Ivu" secondAttribute="centerX" id="nGq-wG-5gh"/>
                             <constraint firstItem="Szz-uM-zJF" firstAttribute="top" secondItem="4OA-i7-0Zx" secondAttribute="bottom" constant="8" id="ngA-o3-Ige"/>
                             <constraint firstItem="Ots-9a-qae" firstAttribute="top" secondItem="pJy-aW-ymt" secondAttribute="bottom" constant="8" id="pr7-iN-Mif"/>
@@ -703,7 +691,6 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Fitness Tracker" id="UoB-wp-5u8" userLabel="Fitness Tracker"/>
                     <connections>
-                        <outlet property="heightLabel" destination="UTu-HC-gmQ" id="4Lf-Km-ly3"/>
                         <outlet property="milesLabel" destination="pJy-aW-ymt" id="aDH-sZ-bXz"/>
                         <outlet property="timerLabel" destination="CRY-NP-CN1" id="ubW-W9-1nk"/>
                     </connections>

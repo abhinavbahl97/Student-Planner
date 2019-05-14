@@ -24,8 +24,12 @@
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
+	<key>NSHealthClinicalHealthRecordsShareUsageDescription</key>
+	<string>needtousedescprtion</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>needed again for proj</string>
+	<string>needlocationalinformation</string>
+	<key>NSLocationUsageDescription</key>
+	<string>locationaldataisneeded</string>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
 	<string>essential needs</string>
 	<key>NSHealthUpdateUsageDescription</key>

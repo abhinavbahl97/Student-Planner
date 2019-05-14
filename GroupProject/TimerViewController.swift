@@ -39,7 +39,16 @@ class TimerViewController: UIViewController, CLLocationManagerDelegate {
         else {
             print("Location service disabled");
         }
-        getHealthKitPermission();
+        //getHealthKitPermission();
+        authorizeHealthKit(completion: { (success, error) -> Void in
+            if error != nil {
+                print("!!!!!!!!!!!!!!")
+            }
+            if success {
+                print("Data was successfully saved in HealthKit")
+            } else {
+            }
+        })
     }
     
     override func didReceiveMemoryWarning() {
@@ -85,11 +94,44 @@ class TimerViewController: UIViewController, CLLocationManagerDelegate {
         }
     }
     
+    func authorizeHealthKit(completion: @escaping (Bool, Error?) -> Swift.Void) {
+        print("Came to authorize health kit")
+        let writableTypes: Set<HKSampleType> = [HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.distanceWalkingRunning)!]
+        let readableTypes: Set<HKSampleType> = [HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.distanceWalkingRunning)!]
+        
+        if !HKHealthStore.isHealthDataAvailable() {
+            print("Can't access HealthKit.")
+        }
+        
+        
+        healthStore.requestAuthorization(toShare: writableTypes, read: readableTypes) { (userWasShownPermissionView, error) in
+            
+            // Determine if the user saw the permission view
+            if (userWasShownPermissionView) {
+                print("User was shown permission view")
+                
+                if (self.healthStore.authorizationStatus(for: HKObjectType.quantityType(forIdentifier: HKQuantityTypeIdentifier.distanceWalkingRunning)!) == .sharingAuthorized) {
+                    print("Permission Granted to Access Walking/Running")
+                } else {
+                    print("Permission Denied to Access walking")
+                }
+                
+            } else {
+                print("User was not shown permission view")
+                
+                // An error occurred
+                if let e = error {
+                    print(e)
+                }
+            }
+        }
+    }
+    
     func getHealthKitPermission() {
-        healthManager.authorizeHealthKit{ (authorized,  error) -> Void in
+        authorizeHealthKit(){ (authorized,  error) -> Void in
             if authorized {
-                print("cameHere")
-                self.setHeight()
+                print("cameHereAuthorized")
+            //    self.setHeight()
                 
                 // Get and set the user's height.
               
@@ -100,32 +142,6 @@ class TimerViewController: UIViewController, CLLocationManagerDelegate {
                 print("Permission denied.")
             }
         }
-    }
-    
-    func setHeight() {
-        // Create the HKSample for Height.
-        let heightSample = HKSampleType.quantityType(forIdentifier: HKQuantityTypeIdentifier.height)
-
-        self.healthManager.getHeight(sampleType: heightSample!, completion: { (userHeight, error) -> Void in
-
-            if( error != nil ) {
-                print("Error: \(error!.localizedDescription)")
-                return
-            }
-
-            var heightString = ""
-
-            self.height = userHeight as? HKQuantitySample
-
-            if let meters = self.height?.quantity.doubleValue(for: HKUnit.meter()) {
-                let formatHeight = LengthFormatter()
-                formatHeight.isForPersonHeightUse = true
-                heightString = formatHeight.string(fromMeters: meters)
-            }
-            
-            DispatchQueue.main.async { self.heightLabel.text = heightString }
-
-        })
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -145,9 +161,22 @@ class TimerViewController: UIViewController, CLLocationManagerDelegate {
         lastLocation = locations.last as CLLocation?
     }
     
-    @IBAction func share(sender: CustomButton) {
-//        healthManager.saveDistance(distanceTraveled, date: NSDate())
 
-    }
     
+    @IBAction func share(sender: CustomButton) {
+        let distanceType = HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.distanceWalkingRunning)
+        let distanceQuantity = HKQuantity(unit: HKUnit.mile(), doubleValue: distanceTraveled)
+        let distance = HKQuantitySample(type: distanceType!, quantity: distanceQuantity, start: NSDate() as Date, end: NSDate() as Date)
+  
+        print("tried to save")
+        healthStore.save(distance, withCompletion: { (success, error) -> Void in
+            if error != nil {
+                print(error)
+            }
+            if success {
+                print("Data was successfully saved in HealthKit")
+            } else {
+            }
+        })
+    }
 }

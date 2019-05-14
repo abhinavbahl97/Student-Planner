@@ -20,42 +20,31 @@ class HealthKitManager {
         if !HKHealthStore.isHealthDataAvailable() {
             print("Can't access HealthKit.")
         }
+    
         
         healthKitStore.requestAuthorization(toShare: writableTypes, read: readableTypes) { (success, error) -> Void in
-            if( completion != nil ) {
-                completion(success, error)
+            if( error != nil ) {
+                print("hello Error here")
             }
         }
     }
     
-    func getHeight(sampleType: HKSampleType , completion: ((HKSample?, NSError?) -> Void)!) {
+    func saveDistance(distanceRecorded: Double, date: NSDate ) {
         
-        // Predicate for the height query
-        let distantPastHeight = NSDate.distantPast as NSDate
-        let currentDate = NSDate()
-        let lastHeightPredicate = HKQuery.predicateForSamples(withStart: distantPastHeight as Date, end: currentDate as Date, options: [])
-        
-        // Get the single most recent height
-        let sortDescriptor = NSSortDescriptor(key: HKSampleSortIdentifierStartDate, ascending: false)
-        
-        // Query HealthKit for the last Height entry.
-        let heightQuery = HKSampleQuery(sampleType: sampleType, predicate: lastHeightPredicate, limit: 1, sortDescriptors: [sortDescriptor]) { (sampleQuery, results, error ) -> Void in
-            
-//            if let queryError = error {
-//                completion(nil, queryError)
-//                return
-//            }
-            
-            // Set the first HKQuantitySample in results as the most recent height.
-            let lastHeight = results!.first
-            
-            if completion != nil {
-                completion(lastHeight, nil)
+        let distanceType = HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.distanceWalkingRunning)
+        print(distanceType)
+        let distanceQuantity = HKQuantity(unit: HKUnit.mile(), doubleValue: distanceRecorded)
+        print(distanceQuantity)
+        let distance = HKQuantitySample(type: distanceType!, quantity: distanceQuantity, start: date as Date, end: date as Date)
+        print(distance)
+    //        HKQuantitySample(type: distanceType!, quantity: distanceQuantity, start: date as Date, end: date as Date)
+        print("tried to save")
+        self.healthKitStore.save(distance, withCompletion: { (success, error) -> Void in
+            if( error != nil ) {
+                print(error)
+            } else {
+                print("The distance has been recorded! Better go check!")
             }
-        }
-        
-        // Time to execute the query.
-        self.healthKitStore.execute(heightQuery)
+        })
     }
-
 }
