@@ -21,7 +21,7 @@ class EventViewController: UIViewController, UITableViewDelegate, UITableViewDat
         didSet{
             tableViewOutlet.delegate = self
             tableViewOutlet.dataSource = self
-            tableViewOutlet.backgroundColor = #colorLiteral(red: 1, green: 0.7520371675, blue: 0.2334620059, alpha: 1)
+            tableViewOutlet.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         }
     }
     
@@ -31,6 +31,7 @@ class EventViewController: UIViewController, UITableViewDelegate, UITableViewDat
         let df = DateFormatter()
         df.dateFormat = "d, yyyy"
         labelOutlet.text = "May \(df.string(from: day.date))"
+        
         events = day.events
         update()
         
@@ -53,7 +54,7 @@ class EventViewController: UIViewController, UITableViewDelegate, UITableViewDat
             myCell.className.text = events![indexPath.row].info
             myCell.name.text = events![indexPath.row].name
             
-            myCell.backgroundColor = #colorLiteral(red: 0.1411764771, green: 0.3960784376, blue: 0.5647059083, alpha: 1)
+            myCell.backgroundColor = #colorLiteral(red: 0.8979802728, green: 0.4520936012, blue: 0.02024788409, alpha: 1)
             
 //            myCell.textLabel?.numberOfLines = 0
 //            myCell.textLabel?.lineBreakMode = .byWordWrapping
