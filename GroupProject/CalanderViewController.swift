@@ -47,13 +47,15 @@ class CalanderViewController: UIViewController {
             var june = false
             var may = true
             var july = false
+
             
             for button in calander{
                 button.setTitle("\(curr)", for: UIControl.State.normal)
                 curr += 1
-                button.setTitleColor(UIColor.white, for: .normal)
+                button.setTitleColor(#colorLiteral(red: 0.8979802728, green: 0.4520936012, blue: 0.02024788409, alpha: 1), for: .normal)
                 if may == true || july == true {
                     button.setTitleColor(UIColor.darkGray, for: .normal)
+                    
                 }
                 if june == false && curr == 32{
                     curr = 1
@@ -107,7 +109,7 @@ class CalanderViewController: UIViewController {
         //the following sets up the numbers for the calander and assigns dates to May dates adding them to "days" collection
         for button in calander{
             button.setTitle("\(curr)", for: UIControl.State.normal)
-            button.setTitleColor(UIColor.white, for: .normal)
+            button.setTitleColor(#colorLiteral(red: 0.8979802728, green: 0.4520936012, blue: 0.02024788409, alpha: 1), for: .normal)
             button.titleLabel?.font = UIFont.italicSystemFont(ofSize: 19)
             curr += 1
             if june{
