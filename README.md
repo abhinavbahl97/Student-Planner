@@ -1,4 +1,4 @@
-# FinalProject-iOS: Collaborative
+# FinalProject-iOS: Student Planner
 Created a student planner app for iOS using native swift development. 
 The app lets a student track the 3 most essential neccesities for a holistical college lifestyle: Classes, Fitness and Sleep
 
